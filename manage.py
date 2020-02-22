@@ -51,7 +51,9 @@ def read_lang_file(path):
 
 
 def update_lang_phrases(target_phrases, source_phrases, lang_code):
-    if lang_code == LANG_CODE_EN:
+    is_english = lang_code == LANG_CODE_EN
+
+    if is_english:
         text_key = 'text'
     else:
         text_key = '_en'
@@ -65,7 +67,7 @@ def update_lang_phrases(target_phrases, source_phrases, lang_code):
         target_phrase['_desc'] = phrase_desc
         target_phrase[text_key] = phrase_english
 
-        if lang_code != LANG_CODE_EN:
+        if not is_english:
             target_phrase.setdefault('text', '')
 
 
