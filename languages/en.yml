@@ -1,0 +1,6 @@
+_meta:
+  language: English
+phrases:
+  last_updated:
+    _desc: Label for last published date
+    text: Last published

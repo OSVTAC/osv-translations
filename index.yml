@@ -1,0 +1,13 @@
+languages:
+  en:
+    name: English
+  es:
+    name: Spanish
+  tl:
+    name: Filipino
+  zh:
+    name: Chinese
+phrases:
+  - id: last_updated
+    desc: Label for last published date
+    en: Last published
