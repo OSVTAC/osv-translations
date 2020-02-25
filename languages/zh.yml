@@ -3,5 +3,5 @@ _meta:
 phrases:
   last_updated:
     _desc: Label for last published date
-    _en: Last published
-    text: 最新更新
+    _text: Last published
+    chinese: 最新更新

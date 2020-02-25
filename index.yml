@@ -10,4 +10,4 @@ languages:
 phrases:
   - id: last_updated
     desc: Label for last published date
-    en: Last published
+    text: Last published

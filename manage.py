@@ -18,6 +18,7 @@
 # along with this program.  If not, see <https://www.gnu.org/licenses/>.
 #
 
+import json
 from pathlib import Path
 import sys
 
@@ -25,6 +26,8 @@ import yaml
 
 
 LANG_CODE_EN = 'en'
+
+TRANSLATIONS_PATH = 'translations.json'
 
 
 def read_yaml(path):
@@ -39,6 +42,15 @@ def write_yaml(data, path):
         yaml.dump(data, f, default_flow_style=False)
 
 
+def read_index():
+    data = read_yaml('index.yml')
+
+    languages_data = data['languages']
+    phrases_data = data['phrases']
+
+    return (languages_data, phrases_data)
+
+
 def get_lang_path(lang_code):
     return Path('languages') / f'{lang_code}.yml'
 
@@ -50,6 +62,15 @@ def read_lang_file(path):
     return read_yaml(path)
 
 
+def iter_source_phrases(source_phrases):
+    for phrase_data in source_phrases:
+        phrase_id = phrase_data['id']
+        desc = phrase_data['desc']
+        english = phrase_data['text']
+
+        yield (phrase_id, desc, english)
+
+
 def update_lang_phrases(target_phrases, source_phrases, lang_code):
     is_english = lang_code == LANG_CODE_EN
 
@@ -58,10 +79,8 @@ def update_lang_phrases(target_phrases, source_phrases, lang_code):
     else:
         text_key = '_en'
 
-    for phrase_data in source_phrases:
-        phrase_id = phrase_data['id']
-        phrase_desc = phrase_data['desc']
-        phrase_english = phrase_data['en']
+    for phrase_info in iter_source_phrases(source_phrases):
+        phrase_id, phrase_desc, phrase_english = phrase_info
 
         target_phrase = target_phrases.setdefault(phrase_id, {})
         target_phrase['_desc'] = phrase_desc
@@ -76,8 +95,8 @@ def update_language_file(source_phrases, languages_data, lang_code):
     lang_name = language_data['name']
 
     lang_path = get_lang_path(lang_code)
-
     data = read_lang_file(lang_path)
+
     data['_meta'] = {
         'language': lang_name
     }
@@ -89,13 +108,62 @@ def update_language_file(source_phrases, languages_data, lang_code):
 
 
 def update_from_index():
-    data = read_yaml('index.yml')
+    languages_data, phrases_data = read_index()
 
-    languages_data = data['languages']
-    source_phrases = data['phrases']
+    lang_codes = sorted(languages_data)
+    lang_codes.remove(LANG_CODE_EN)
 
     for lang_code in sorted(languages_data):
         update_language_file(source_phrases, languages_data, lang_code=lang_code)
+
+
+def _build_lang(lang_code, lang_name, translations_data):
+    lang_path = get_lang_path(lang_code)
+    data = read_lang_file(lang_path)
+    try:
+        phrases_data = data['phrases']
+    except KeyError:
+        raise RuntimeError(lang_path, phrases_data)
+
+    for phrase_id, phrase_data in phrases_data.items():
+        translation_data = translations_data[phrase_id]
+
+        phrase_key = lang_name.lower()
+        try:
+            text = phrase_data[phrase_key]
+        except KeyError:
+            msg = f'key {phrase_key!r} missing from phrase data: {phrase_data!r}'
+            raise RuntimeError(msg) from None
+
+        translation_data[lang_code] = text
+
+
+def build_json():
+    languages_data, phrases_data = read_index()
+
+    translations_data = {}
+
+    for phrase_info in iter_source_phrases(phrases_data):
+        phrase_id, phrase_desc, phrase_english = phrase_info
+        phrase_data  = {LANG_CODE_EN: phrase_english}
+        translations_data[phrase_id] = phrase_data
+
+    # We are done processing English.
+    del languages_data[LANG_CODE_EN]
+
+    for lang_code, lang_data in languages_data.items():
+        lang_name = lang_data['name']
+
+        try:
+            _build_lang(lang_code, lang_name=lang_name, translations_data=translations_data)
+        except:
+            msg = f'error while processing file for language: {lang_code!r}'
+            raise RuntimeError(msg)
+
+    data = {'translations': translations_data}
+
+    with open(TRANSLATIONS_PATH, mode='w') as f:
+        json.dump(data, f, sort_keys=True, indent=4, ensure_ascii=False)
 
 
 def main():
@@ -103,13 +171,14 @@ def main():
     command_name = args[0]
 
     manage_funcs = {
-        'update-from-index': update_from_index,
+        'build_json': build_json,
+        'update_from_index': update_from_index,
     }
 
     if command_name not in manage_funcs:
         targets = ', '.join(sorted(manage_funcs))
         msg = (
-            f'invalid command name: {command_name!r} (not one of: {targets})'
+            f'invalid command name: {command_name!r} (must be one of: {targets})'
         )
         raise RuntimeError(msg)
 
