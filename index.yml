@@ -11,3 +11,6 @@ phrases:
   - id: last_updated
     desc: Label for last published date
     text: Last published
+  - id: switch_language
+    desc: Text preceding the language toggle at the top of each page.
+    text: Switch language

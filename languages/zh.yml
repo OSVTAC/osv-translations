@@ -5,3 +5,7 @@ phrases:
     _desc: Label for last published date
     _text: Last published
     chinese: 最新更新
+  switch_language:
+    _desc: Text preceding the language toggle at the top of each page.
+    _text: Switch language
+    chinese: 切换语言

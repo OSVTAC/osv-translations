@@ -5,6 +5,12 @@
             "es": "Actualizado por última vez",
             "tl": "Huling Pagsasapanahon",
             "zh": "最新更新"
+        },
+        "switch_language": {
+            "en": "Switch language",
+            "es": "Cambiar de idioma",
+            "tl": "Lumipat wika",
+            "zh": "切换语言"
         }
     }
 }
