@@ -39,7 +39,9 @@ def read_yaml(path):
 
 def write_yaml(data, path):
     with open(path, mode='w') as f:
-        yaml.dump(data, f, default_flow_style=False)
+        # Pass allow_unicode=True so that string values will use Unicode
+        # characters rather than being escaped for ascii.
+        yaml.dump(data, f, default_flow_style=False, allow_unicode=True)
 
 
 def read_index():
@@ -63,6 +65,11 @@ def read_lang_file(path):
 
 
 def iter_source_phrases(source_phrases):
+    """
+    Args:
+      source_phrases: the value of the "phrases" key in the source
+        `index.yml` file.
+    """
     for phrase_data in source_phrases:
         phrase_id = phrase_data['id']
         desc = phrase_data['desc']
@@ -71,13 +78,22 @@ def iter_source_phrases(source_phrases):
         yield (phrase_id, desc, english)
 
 
-def update_lang_phrases(target_phrases, source_phrases, lang_code):
+def update_lang_phrases(target_phrases, source_phrases, lang_code, lang_name):
+    """
+    Args:
+      source_phrases: the value of the "phrases" key in the source
+        `index.yml` file.
+      lang_name: the name of the language in English, e.g. "English" or
+        "Spanish".
+    """
     is_english = lang_code == LANG_CODE_EN
 
     if is_english:
         text_key = 'text'
     else:
-        text_key = '_en'
+        text_key = '_text'
+
+    translated_key = lang_name.lower()
 
     for phrase_info in iter_source_phrases(source_phrases):
         phrase_id, phrase_desc, phrase_english = phrase_info
@@ -87,10 +103,15 @@ def update_lang_phrases(target_phrases, source_phrases, lang_code):
         target_phrase[text_key] = phrase_english
 
         if not is_english:
-            target_phrase.setdefault('text', '')
+            target_phrase.setdefault(translated_key, '')
 
 
 def update_language_file(source_phrases, languages_data, lang_code):
+    """
+    Args:
+      source_phrases: the value of the "phrases" key in the source
+        `index.yml` file.
+    """
     language_data = languages_data[lang_code]
     lang_name = language_data['name']
 
@@ -102,18 +123,19 @@ def update_language_file(source_phrases, languages_data, lang_code):
     }
     target_phrases = data.setdefault('phrases', {})
 
-    update_lang_phrases(target_phrases, source_phrases, lang_code=lang_code)
+    update_lang_phrases(target_phrases, source_phrases, lang_code=lang_code,
+        lang_name=lang_name)
 
     write_yaml(data, path=lang_path)
 
 
 def update_from_index():
-    languages_data, phrases_data = read_index()
+    languages_data, source_phrases = read_index()
 
     lang_codes = sorted(languages_data)
     lang_codes.remove(LANG_CODE_EN)
 
-    for lang_code in sorted(languages_data):
+    for lang_code in lang_codes:
         update_language_file(source_phrases, languages_data, lang_code=lang_code)
 
 
@@ -163,6 +185,8 @@ def build_json():
     data = {'translations': translations_data}
 
     with open(TRANSLATIONS_PATH, mode='w') as f:
+        # Pass ensure_ascii=False so that string values will use Unicode
+        # characters rather than being escaped for ascii.
         json.dump(data, f, sort_keys=True, indent=4, ensure_ascii=False)
 
 
