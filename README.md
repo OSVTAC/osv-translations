@@ -1,5 +1,7 @@
 # Open Source Voting Translation Manager (OTM)
 
+[![Build Status](https://travis-ci.org/OSVTAC/osv-translations.svg?branch=master)](https://travis-ci.org/OSVTAC/osv-translations)
+
 This project is an official project of San Francisco's [Open Source Voting
 System Technical Advisory Committee][osvtac] (aka OSVTAC or TAC).
 
