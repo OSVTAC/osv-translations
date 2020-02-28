@@ -31,7 +31,7 @@ phrases:
     - reported_precinct_count
     - total_precinct_count
     _text: '{0} of {1} Precincts Reporting'
-    chinese: ''
+    chinese: '{0}個投票區中的{1}個'
   switch_language:
     _desc: Text preceding the language toggle at the top of each page.
     _text: Change language

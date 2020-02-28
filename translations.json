@@ -19,42 +19,60 @@
     },
     "translations": {
         "detailed_reports_and_downloads": {
+            "_desc": "Text for the hyperlink to the \"Detailed reports and downloads\" page",
             "en": "Detailed reports and downloads",
             "es": "Reporte detallado",
             "tl": "Detalyadong Ulat",
             "zh": ""
         },
         "language_chinese": {
+            "_desc": "The Chinese language (e.g. for the toggle)",
             "en": "Chinese",
             "es": "",
             "tl": "",
             "zh": "中文"
         },
         "language_english": {
+            "_desc": "The English language (e.g. for the toggle)",
             "en": "English",
             "es": "",
             "tl": "",
             "zh": ""
         },
         "language_filipino": {
+            "_desc": "The Filipino language (e.g. for the toggle)",
             "en": "Filipino",
             "es": "",
             "tl": "",
             "zh": ""
         },
         "language_spanish": {
+            "_desc": "The Spanish language (e.g. for the toggle)",
             "en": "Spanish",
             "es": "Español",
             "tl": "",
             "zh": ""
         },
         "last_updated": {
+            "_desc": "Label for last published date",
             "en": "Last published",
             "es": "Actualizado por última vez",
             "tl": "Huling Pagsasapanahon",
             "zh": "最新更新"
         },
+        "precincts_reporting": {
+            "_desc": "Phrase describing how many precincts have reported (in N of M format)",
+            "_params": [
+                "reported_precinct_count",
+                "total_precinct_count"
+            ],
+            "en": "{0} of {1} Precincts Reporting",
+            "es": "{0} de {1} Recintos electorales reportados",
+            "tl": "{0} sa {1} Iniulat na mga Presinto",
+            "zh": "{0}個投票區中的{1}個"
+        },
         "switch_language": {
+            "_desc": "Text preceding the language toggle at the top of each page.",
             "en": "Change language",
             "es": "Cambiar de idioma",
             "tl": "Lumipat wika",
