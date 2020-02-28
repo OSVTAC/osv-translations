@@ -43,11 +43,13 @@ def read_yaml(path):
     return data
 
 
-def write_yaml(data, path):
-    with open(path, mode='w') as f:
-        # Pass allow_unicode=True so that string values will use Unicode
-        # characters rather than being escaped for ascii.
-        yaml.dump(data, f, default_flow_style=False, allow_unicode=True)
+def to_yaml(data):
+    """
+    Convert the data to a string of yaml.
+    """
+    # Pass allow_unicode=True so that string values will use Unicode
+    # characters rather than being escaped for ascii.
+    return yaml.dump(data, default_flow_style=False, allow_unicode=True)
 
 
 def check_or_update(target_path, new_text, check_mode=False):
@@ -166,11 +168,14 @@ def update_lang_phrases(target_phrases, source_phrases, lang_code, lang_name):
         target_phrase.setdefault(translated_key, '')
 
 
-def update_language_file(source_phrases, languages_data, lang_code):
+def update_language_file(source_phrases, languages_data, lang_code,
+    check_mode=False):
     """
     Args:
       source_phrases: the value of the "phrases" key in the source
         `index.yml` file.
+      check_mode: if True, only check that the file is updated.  Don't
+        actually update it.
     """
     language_data = languages_data[lang_code]
     lang_name = language_data['name']
@@ -186,17 +191,25 @@ def update_language_file(source_phrases, languages_data, lang_code):
     update_lang_phrases(target_phrases, source_phrases, lang_code=lang_code,
         lang_name=lang_name)
 
-    write_yaml(data, path=lang_path)
+    updated_text = to_yaml(data)
+
+    check_or_update(lang_path, new_text=updated_text, check_mode=check_mode)
 
 
-def update_from_index():
+def update_from_index(check_mode=False):
+    """
+    Args:
+      check_mode: if True, only check that the files to update are updated.
+        Don't actually update them.
+    """
     languages_data, source_phrases = read_index()
 
     lang_codes = sorted(languages_data)
     lang_codes.remove(LANG_CODE_EN)
 
     for lang_code in lang_codes:
-        update_language_file(source_phrases, languages_data, lang_code=lang_code)
+        update_language_file(source_phrases, languages_data, lang_code=lang_code,
+            check_mode=check_mode)
 
 
 def _build_lang(lang_code, lang_name, translations_data):
@@ -269,7 +282,7 @@ def check_updated():
 
     This check was added to run in CI.
     """
-    # TODO: also check that the source language files are updated.
+    update_from_index(check_mode=True)
     build_json(check_mode=True)
 
 
