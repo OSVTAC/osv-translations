@@ -18,6 +18,7 @@
 # along with this program.  If not, see <https://www.gnu.org/licenses/>.
 #
 
+import functools
 import json
 from pathlib import Path
 import sys
@@ -26,8 +27,13 @@ import yaml
 
 
 LANG_CODE_EN = 'en'
+LINES_CONTEXT = 6
 
-TRANSLATIONS_PATH = 'translations.json'
+TRANSLATIONS_PATH = Path('translations.json')
+
+
+def _log(text):
+    print(text, file=sys.stderr)
 
 
 def read_yaml(path):
@@ -42,6 +48,64 @@ def write_yaml(data, path):
         # Pass allow_unicode=True so that string values will use Unicode
         # characters rather than being escaped for ascii.
         yaml.dump(data, f, default_flow_style=False, allow_unicode=True)
+
+
+def check_or_update(target_path, new_text, check_mode=False):
+    """
+    Args:
+      target_path: a Path object.
+      check_mode: if True, only check that file contents match.  Don't
+        actually write the new file contents.
+    """
+    if not check_mode:
+        target_path.write_text(new_text)
+        return
+
+    current_text = target_path.read_text()
+    if current_text == new_text:
+        _log(f'file up-to-date: {target_path}')
+        return
+
+    current_lines, new_lines = (
+        text.splitlines(keepends=True) for text in (current_text, new_text)
+    )
+    error_lines = [
+        f'ERROR! file not up-to-date: {target_path}',
+        'Line counts:',
+        f'  current: {len(current_lines)}',
+        f'      new: {len(new_lines)}',
+    ]
+
+    for line_index, (current_line, new_line) in enumerate(zip(current_lines, new_lines)):
+        if current_line != new_line:
+            line_no = line_index + 1
+            # Show leading context in the error message.
+            start_line_index = max(0, line_index - LINES_CONTEXT)
+            start_line_no = start_line_index + 1
+
+            error_lines.extend([
+                '',
+                f'First mismatch at: line {line_no} (1-based)',
+                '',
+                f'Showing current lines with leading context (lines {start_line_no} to {line_no}):',
+                '',
+                f'--- START CONTEXT ---',
+            ])
+            error_lines.extend(current_lines[start_line_no:line_index])
+            error_lines.extend([
+                current_line.rstrip(),
+                f'*** MISMATCHED LINE {line_no} (above and below) ***',
+                new_line.rstrip(),
+                '',
+                f'Showing mismatched line {line_no} (formatted):',
+                f'  current: {current_line!r}',
+                f'      new: {new_line!r}',
+            ])
+            break
+
+    error_text = '\n'.join(error_lines)
+
+    raise RuntimeError(error_text)
 
 
 def read_index():
@@ -160,7 +224,12 @@ def _build_lang(lang_code, lang_name, translations_data):
         translation_data[lang_code] = text
 
 
-def build_json():
+def build_json(check_mode=False):
+    """
+    Args:
+      check_mode: if True, only check that files are built.  Don't actually
+        build them.
+    """
     languages_data, phrases_data = read_index()
 
     translations_data = {}
@@ -184,10 +253,21 @@ def build_json():
 
     data = {'translations': translations_data}
 
-    with open(TRANSLATIONS_PATH, mode='w') as f:
-        # Pass ensure_ascii=False so that string values will use Unicode
-        # characters rather than being escaped for ascii.
-        json.dump(data, f, sort_keys=True, indent=4, ensure_ascii=False)
+    # Pass ensure_ascii=False so that string values will use Unicode
+    # characters rather than being escaped for ascii.
+    new_built_text = json.dumps(data, sort_keys=True, indent=4, ensure_ascii=False)
+
+    check_or_update(TRANSLATIONS_PATH, new_text=new_built_text, check_mode=check_mode)
+
+
+def check_updated():
+    """
+    Check that the repo is up-to-date.
+
+    This check was added to run in CI.
+    """
+    # TODO: also check that the source language files are updated.
+    build_json(check_mode=True)
 
 
 def main():
@@ -196,6 +276,7 @@ def main():
 
     manage_funcs = {
         'build_json': build_json,
+        'check_updated': check_updated,
         'update_from_index': update_from_index,
     }
 
