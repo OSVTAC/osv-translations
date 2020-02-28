@@ -1,11 +1,11 @@
 # Open Source Voting Translation Manager (OTM)
 
-[This is an official project of San Francisco's [Open Source Voting System
-Technical Advisory Committee][osvtac] (aka OSVTAC or TAC for short).]
+This project is an official project of San Francisco's [Open Source Voting
+System Technical Advisory Committee][osvtac] (aka OSVTAC or TAC).
 
-This project contains translations of phrases that occur in TAC's
-[demo results template][demo-template], along with a script to help with
-managing these translations.
+The project contains translations of phrases that occur in TAC's
+[demo results template][demo-template], along with a script to help
+manage those translations.
 
 The YAML files in this repo contain the source translation data (one
 file per language) and are meant to be edited by hand.
