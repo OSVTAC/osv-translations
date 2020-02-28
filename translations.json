@@ -1,4 +1,22 @@
 {
+    "languages": {
+        "en": {
+            "name": "English",
+            "phrase_id": "language_english"
+        },
+        "es": {
+            "name": "Spanish",
+            "phrase_id": "language_spanish"
+        },
+        "tl": {
+            "name": "Filipino",
+            "phrase_id": "language_filipino"
+        },
+        "zh": {
+            "name": "Chinese",
+            "phrase_id": "language_chinese"
+        }
+    },
     "translations": {
         "detailed_reports_and_downloads": {
             "en": "Detailed reports and downloads",

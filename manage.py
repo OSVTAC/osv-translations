@@ -239,10 +239,12 @@ def build_json(check_mode=False):
         phrase_data  = {LANG_CODE_EN: phrase_english}
         translations_data[phrase_id] = phrase_data
 
+    lang_codes = sorted(languages_data)
     # We are done processing English.
-    del languages_data[LANG_CODE_EN]
+    lang_codes.remove(LANG_CODE_EN)
 
-    for lang_code, lang_data in languages_data.items():
+    for lang_code in lang_codes:
+        lang_data = languages_data[lang_code]
         lang_name = lang_data['name']
 
         try:
@@ -251,7 +253,10 @@ def build_json(check_mode=False):
             msg = f'error while processing file for language: {lang_code!r}'
             raise RuntimeError(msg)
 
-    data = {'translations': translations_data}
+    data = {
+        'languages': languages_data,
+        'translations': translations_data,
+    }
 
     # Pass ensure_ascii=False so that string values will use Unicode
     # characters rather than being escaped for ascii.

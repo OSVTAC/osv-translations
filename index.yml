@@ -1,12 +1,16 @@
 languages:
   en:
     name: English
+    phrase_id: language_english
   es:
     name: Spanish
+    phrase_id: language_spanish
   tl:
     name: Filipino
+    phrase_id: language_filipino
   zh:
     name: Chinese
+    phrase_id: language_chinese
 phrases:
   - id: detailed_reports_and_downloads
     desc: Text for the hyperlink to the "Detailed reports and downloads" page
