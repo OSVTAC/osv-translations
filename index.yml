@@ -30,6 +30,12 @@ phrases:
   - id: last_updated
     desc: Label for last published date
     text: Last published
+  - id: precincts_reporting
+    desc: Phrase describing how many precincts have reported (in N of M format)
+    params:
+      - reported_precinct_count
+      - total_precinct_count
+    text: "{0} of {1} Precincts Reporting"
   - id: switch_language
     desc: Text preceding the language toggle at the top of each page.
     text: Change language

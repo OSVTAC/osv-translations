@@ -25,6 +25,13 @@ phrases:
     _desc: Label for last published date
     _text: Last published
     chinese: 最新更新
+  precincts_reporting:
+    _desc: Phrase describing how many precincts have reported (in N of M format)
+    _params:
+    - reported_precinct_count
+    - total_precinct_count
+    _text: '{0} of {1} Precincts Reporting'
+    chinese: ''
   switch_language:
     _desc: Text preceding the language toggle at the top of each page.
     _text: Change language

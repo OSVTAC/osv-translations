@@ -135,11 +135,13 @@ def iter_source_phrases(source_phrases):
         `index.yml` file.
     """
     for phrase_data in source_phrases:
-        phrase_id = phrase_data['id']
-        desc = phrase_data['desc']
-        english = phrase_data['text']
+        new_phrase_data = {
+            f'_{key}': value for key, value in phrase_data.items()
+        }
 
-        yield (phrase_id, desc, english)
+        phrase_id = new_phrase_data.pop('_id')
+
+        yield (phrase_id, new_phrase_data)
 
 
 def update_lang_phrases(target_phrases, source_phrases, lang_code, lang_name):
@@ -147,27 +149,21 @@ def update_lang_phrases(target_phrases, source_phrases, lang_code, lang_name):
     Args:
       source_phrases: the value of the "phrases" key in the source
         `index.yml` file.
+      lang_code: a 2-letter language code (other than English / "en").
       lang_name: the name of the language in English, e.g. "English" or
         "Spanish".
     """
-    is_english = lang_code == LANG_CODE_EN
-
-    if is_english:
-        text_key = 'text'
-    else:
-        text_key = '_text'
+    assert lang_code != LANG_CODE_EN
 
     translated_key = lang_name.lower()
 
-    for phrase_info in iter_source_phrases(source_phrases):
-        phrase_id, phrase_desc, phrase_english = phrase_info
-
+    for phrase_id, phrase_data in iter_source_phrases(source_phrases):
         target_phrase = target_phrases.setdefault(phrase_id, {})
-        target_phrase['_desc'] = phrase_desc
-        target_phrase[text_key] = phrase_english
+        target_phrase.update(phrase_data)
 
-        if not is_english:
-            target_phrase.setdefault(translated_key, '')
+        # Add a placeholder key-value for the translation, if a value
+        # isn't already present.
+        target_phrase.setdefault(translated_key, '')
 
 
 def update_language_file(source_phrases, languages_data, lang_code):
@@ -234,9 +230,11 @@ def build_json(check_mode=False):
 
     translations_data = {}
 
-    for phrase_info in iter_source_phrases(phrases_data):
-        phrase_id, phrase_desc, phrase_english = phrase_info
-        phrase_data  = {LANG_CODE_EN: phrase_english}
+    for phrase_id, phrase_data in iter_source_phrases(phrases_data):
+        phrase_english = phrase_data.pop('_text')
+
+        phrase_data[LANG_CODE_EN] = phrase_english
+
         translations_data[phrase_id] = phrase_data
 
     lang_codes = sorted(languages_data)
