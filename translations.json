@@ -1,5 +1,35 @@
 {
     "translations": {
+        "detailed_reports_and_downloads": {
+            "en": "Detailed reports and downloads",
+            "es": "Reporte detallado",
+            "tl": "Detalyadong Ulat",
+            "zh": ""
+        },
+        "language_chinese": {
+            "en": "Chinese",
+            "es": "",
+            "tl": "",
+            "zh": "中文"
+        },
+        "language_english": {
+            "en": "English",
+            "es": "",
+            "tl": "",
+            "zh": ""
+        },
+        "language_filipino": {
+            "en": "Filipino",
+            "es": "",
+            "tl": "",
+            "zh": ""
+        },
+        "language_spanish": {
+            "en": "Spanish",
+            "es": "Español",
+            "tl": "",
+            "zh": ""
+        },
         "last_updated": {
             "en": "Last published",
             "es": "Actualizado por última vez",
@@ -7,7 +37,7 @@
             "zh": "最新更新"
         },
         "switch_language": {
-            "en": "Switch language",
+            "en": "Change language",
             "es": "Cambiar de idioma",
             "tl": "Lumipat wika",
             "zh": "切换语言"
