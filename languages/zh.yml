@@ -1,11 +1,31 @@
 _meta:
   language: Chinese
 phrases:
+  detailed_reports_and_downloads:
+    _desc: Text for the hyperlink to the "Detailed reports and downloads" page
+    _text: Detailed reports and downloads
+    chinese: ''
+  language_chinese:
+    _desc: The Chinese language (e.g. for the toggle)
+    _text: Chinese
+    chinese: 中文
+  language_english:
+    _desc: The English language (e.g. for the toggle)
+    _text: English
+    chinese: ''
+  language_filipino:
+    _desc: The Filipino language (e.g. for the toggle)
+    _text: Filipino
+    chinese: ''
+  language_spanish:
+    _desc: The Spanish language (e.g. for the toggle)
+    _text: Spanish
+    chinese: ''
   last_updated:
     _desc: Label for last published date
     _text: Last published
     chinese: 最新更新
   switch_language:
     _desc: Text preceding the language toggle at the top of each page.
-    _text: Switch language
+    _text: Change language
     chinese: 切换语言

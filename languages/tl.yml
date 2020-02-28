@@ -1,11 +1,31 @@
 _meta:
   language: Filipino
 phrases:
+  detailed_reports_and_downloads:
+    _desc: Text for the hyperlink to the "Detailed reports and downloads" page
+    _text: Detailed reports and downloads
+    filipino: Detalyadong Ulat
+  language_chinese:
+    _desc: The Chinese language (e.g. for the toggle)
+    _text: Chinese
+    filipino: ''
+  language_english:
+    _desc: The English language (e.g. for the toggle)
+    _text: English
+    filipino: ''
+  language_filipino:
+    _desc: The Filipino language (e.g. for the toggle)
+    _text: Filipino
+    filipino: ''
+  language_spanish:
+    _desc: The Spanish language (e.g. for the toggle)
+    _text: Spanish
+    filipino: ''
   last_updated:
     _desc: Label for last published date
     _text: Last published
     filipino: Huling Pagsasapanahon
   switch_language:
     _desc: Text preceding the language toggle at the top of each page.
-    _text: Switch language
+    _text: Change language
     filipino: Lumipat wika

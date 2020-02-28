@@ -1,11 +1,31 @@
 _meta:
   language: Spanish
 phrases:
+  detailed_reports_and_downloads:
+    _desc: Text for the hyperlink to the "Detailed reports and downloads" page
+    _text: Detailed reports and downloads
+    spanish: Reporte detallado
+  language_chinese:
+    _desc: The Chinese language (e.g. for the toggle)
+    _text: Chinese
+    spanish: ''
+  language_english:
+    _desc: The English language (e.g. for the toggle)
+    _text: English
+    spanish: ''
+  language_filipino:
+    _desc: The Filipino language (e.g. for the toggle)
+    _text: Filipino
+    spanish: ''
+  language_spanish:
+    _desc: The Spanish language (e.g. for the toggle)
+    _text: Spanish
+    spanish: Español
   last_updated:
     _desc: Label for last published date
     _text: Last published
     spanish: Actualizado por última vez
   switch_language:
     _desc: Text preceding the language toggle at the top of each page.
-    _text: Switch language
+    _text: Change language
     spanish: Cambiar de idioma

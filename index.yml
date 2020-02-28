@@ -8,9 +8,24 @@ languages:
   zh:
     name: Chinese
 phrases:
+  - id: detailed_reports_and_downloads
+    desc: Text for the hyperlink to the "Detailed reports and downloads" page
+    text: Detailed reports and downloads
+  - id: language_chinese
+    desc: The Chinese language (e.g. for the toggle)
+    text: Chinese
+  - id: language_english
+    desc: The English language (e.g. for the toggle)
+    text: English
+  - id: language_filipino
+    desc: The Filipino language (e.g. for the toggle)
+    text: Filipino
+  - id: language_spanish
+    desc: The Spanish language (e.g. for the toggle)
+    text: Spanish
   - id: last_updated
     desc: Label for last published date
     text: Last published
   - id: switch_language
     desc: Text preceding the language toggle at the top of each page.
-    text: Switch language
+    text: Change language
