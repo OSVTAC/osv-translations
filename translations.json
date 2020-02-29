@@ -60,6 +60,42 @@
             "tl": "Huling Pagsasapanahon",
             "zh": "最新更新"
         },
+        "party_AI": {
+            "en": "American Independent",
+            "es": "Independiente Americano",
+            "tl": "Amerikanong Independiyente",
+            "zh": "美國獨立黨"
+        },
+        "party_DEM": {
+            "en": "Democratic",
+            "es": "Demócrata",
+            "tl": "Demokratiko",
+            "zh": "民主黨"
+        },
+        "party_GRN": {
+            "en": "Green",
+            "es": "Verde",
+            "tl": "Luntian",
+            "zh": "綠黨"
+        },
+        "party_LIB": {
+            "en": "Libertarian",
+            "es": "Libertario",
+            "tl": "Libertaryan",
+            "zh": "自由黨"
+        },
+        "party_PF": {
+            "en": "Peace and Freedom",
+            "es": "Paz y Libertad",
+            "tl": "Kapayapaan at Kalayaan",
+            "zh": "和平與自由黨"
+        },
+        "party_REP": {
+            "en": "Republican",
+            "es": "Republicano",
+            "tl": "Republikado",
+            "zh": "共和黨"
+        },
         "precincts_reporting": {
             "_desc": "Phrase describing how many precincts have reported (in N of M format)",
             "_params": [

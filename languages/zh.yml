@@ -27,22 +27,22 @@ phrases:
     chinese: 最新更新
   party_AI:
     _text: American Independent
-    chinese: ''
+    chinese: 美國獨立黨
   party_DEM:
     _text: Democratic
-    chinese: ''
+    chinese: 民主黨
   party_GRN:
     _text: Green
-    chinese: ''
+    chinese: 綠黨
   party_LIB:
     _text: Libertarian
-    chinese: ''
+    chinese: 自由黨
   party_PF:
     _text: Peace and Freedom
-    chinese: ''
+    chinese: 和平與自由黨
   party_REP:
     _text: Republican
-    chinese: ''
+    chinese: 共和黨
   precincts_reporting:
     _desc: Phrase describing how many precincts have reported (in N of M format)
     _params:

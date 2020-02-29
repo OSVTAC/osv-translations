@@ -27,22 +27,22 @@ phrases:
     filipino: Huling Pagsasapanahon
   party_AI:
     _text: American Independent
-    filipino: ''
+    filipino: Amerikanong Independiyente
   party_DEM:
     _text: Democratic
-    filipino: ''
+    filipino: Demokratiko
   party_GRN:
     _text: Green
-    filipino: ''
+    filipino: Luntian
   party_LIB:
     _text: Libertarian
-    filipino: ''
+    filipino: Libertaryan
   party_PF:
     _text: Peace and Freedom
-    filipino: ''
+    filipino: Kapayapaan at Kalayaan
   party_REP:
     _text: Republican
-    filipino: ''
+    filipino: Republikado
   precincts_reporting:
     _desc: Phrase describing how many precincts have reported (in N of M format)
     _params:

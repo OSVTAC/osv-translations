@@ -27,22 +27,22 @@ phrases:
     spanish: Actualizado por última vez
   party_AI:
     _text: American Independent
-    spanish: ''
+    spanish: Independiente Americano
   party_DEM:
     _text: Democratic
-    spanish: ''
+    spanish: Demócrata
   party_GRN:
     _text: Green
-    spanish: ''
+    spanish: Verde
   party_LIB:
     _text: Libertarian
-    spanish: ''
+    spanish: Libertario
   party_PF:
     _text: Peace and Freedom
-    spanish: ''
+    spanish: Paz y Libertad
   party_REP:
     _text: Republican
-    spanish: ''
+    spanish: Republicano
   precincts_reporting:
     _desc: Phrase describing how many precincts have reported (in N of M format)
     _params:
