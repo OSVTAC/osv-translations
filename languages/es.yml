@@ -8,15 +8,15 @@ phrases:
   language_chinese:
     _desc: The Chinese language (e.g. for the toggle)
     _text: Chinese
-    spanish: ''
+    spanish: Chino
   language_english:
     _desc: The English language (e.g. for the toggle)
     _text: English
-    spanish: ''
+    spanish: Inglés
   language_filipino:
     _desc: The Filipino language (e.g. for the toggle)
     _text: Filipino
-    spanish: ''
+    spanish: Filipino
   language_spanish:
     _desc: The Spanish language (e.g. for the toggle)
     _text: Spanish

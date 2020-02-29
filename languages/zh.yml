@@ -12,15 +12,15 @@ phrases:
   language_english:
     _desc: The English language (e.g. for the toggle)
     _text: English
-    chinese: ''
+    chinese: 英文
   language_filipino:
     _desc: The Filipino language (e.g. for the toggle)
     _text: Filipino
-    chinese: ''
+    chinese: 菲律宾语
   language_spanish:
     _desc: The Spanish language (e.g. for the toggle)
     _text: Spanish
-    chinese: ''
+    chinese: 西班牙文
   last_updated:
     _desc: Label for last published date
     _text: Last published

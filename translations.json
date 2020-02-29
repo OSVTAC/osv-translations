@@ -28,30 +28,30 @@
         "language_chinese": {
             "_desc": "The Chinese language (e.g. for the toggle)",
             "en": "Chinese",
-            "es": "",
-            "tl": "",
+            "es": "Chino",
+            "tl": "Tsino",
             "zh": "中文"
         },
         "language_english": {
             "_desc": "The English language (e.g. for the toggle)",
             "en": "English",
-            "es": "",
-            "tl": "",
-            "zh": ""
+            "es": "Inglés",
+            "tl": "Ingles",
+            "zh": "英文"
         },
         "language_filipino": {
             "_desc": "The Filipino language (e.g. for the toggle)",
             "en": "Filipino",
-            "es": "",
-            "tl": "",
-            "zh": ""
+            "es": "Filipino",
+            "tl": "Pilipino",
+            "zh": "菲律宾语"
         },
         "language_spanish": {
             "_desc": "The Spanish language (e.g. for the toggle)",
             "en": "Spanish",
             "es": "Español",
-            "tl": "",
-            "zh": ""
+            "tl": "Espanyol",
+            "zh": "西班牙文"
         },
         "last_updated": {
             "_desc": "Label for last published date",
@@ -93,7 +93,7 @@
         "party_REP": {
             "en": "Republican",
             "es": "Republicano",
-            "tl": "Republikado",
+            "tl": "Republikano",
             "zh": "共和黨"
         },
         "precincts_reporting": {

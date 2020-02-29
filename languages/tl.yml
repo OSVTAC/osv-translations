@@ -8,19 +8,19 @@ phrases:
   language_chinese:
     _desc: The Chinese language (e.g. for the toggle)
     _text: Chinese
-    filipino: ''
+    filipino: Tsino
   language_english:
     _desc: The English language (e.g. for the toggle)
     _text: English
-    filipino: ''
+    filipino: Ingles
   language_filipino:
     _desc: The Filipino language (e.g. for the toggle)
     _text: Filipino
-    filipino: ''
+    filipino: Pilipino
   language_spanish:
     _desc: The Spanish language (e.g. for the toggle)
     _text: Spanish
-    filipino: ''
+    filipino: Espanyol
   last_updated:
     _desc: Label for last published date
     _text: Last published
@@ -42,7 +42,7 @@ phrases:
     filipino: Kapayapaan at Kalayaan
   party_REP:
     _text: Republican
-    filipino: Republikado
+    filipino: Republikano
   precincts_reporting:
     _desc: Phrase describing how many precincts have reported (in N of M format)
     _params:
