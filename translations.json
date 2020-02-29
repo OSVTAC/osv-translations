@@ -69,7 +69,7 @@
             "en": "{0} of {1} Precincts Reporting",
             "es": "{0} de {1} Recintos electorales reportados",
             "tl": "{0} sa {1} Iniulat na mga Presinto",
-            "zh": "{0}個投票區中的{1}個"
+            "zh": "{1}個投票區中的{0}個"
         },
         "switch_language": {
             "_desc": "Text preceding the language toggle at the top of each page.",
