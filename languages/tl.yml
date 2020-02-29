@@ -25,6 +25,24 @@ phrases:
     _desc: Label for last published date
     _text: Last published
     filipino: Huling Pagsasapanahon
+  party_AI:
+    _text: American Independent
+    filipino: ''
+  party_DEM:
+    _text: Democratic
+    filipino: ''
+  party_GRN:
+    _text: Green
+    filipino: ''
+  party_LIB:
+    _text: Libertarian
+    filipino: ''
+  party_PF:
+    _text: Peace and Freedom
+    filipino: ''
+  party_REP:
+    _text: Republican
+    filipino: ''
   precincts_reporting:
     _desc: Phrase describing how many precincts have reported (in N of M format)
     _params:

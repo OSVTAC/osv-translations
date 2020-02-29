@@ -30,6 +30,21 @@ phrases:
   - id: last_updated
     desc: Label for last published date
     text: Last published
+
+  # Political parties
+  - id: party_AI
+    text: American Independent
+  - id: party_DEM
+    text: Democratic
+  - id: party_GRN
+    text: Green
+  - id: party_LIB
+    text: Libertarian
+  - id: party_PF
+    text: Peace and Freedom
+  - id: party_REP
+    text: Republican
+
   - id: precincts_reporting
     desc: Phrase describing how many precincts have reported (in N of M format)
     params:
