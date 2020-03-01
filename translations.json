@@ -21,9 +21,16 @@
         "detailed_reports_and_downloads": {
             "_desc": "Text for the hyperlink to the \"Detailed reports and downloads\" page",
             "en": "Detailed reports and downloads",
-            "es": "Reporte detallado",
-            "tl": "Detalyadong Ulat",
-            "zh": ""
+            "es": "Informes detallados y descargas",
+            "tl": "Mga detalyadong ulat at pag-download",
+            "zh": "详细的报告和下载"
+        },
+        "detailed_results_label": {
+            "_desc": "Text for the hyperlink to the detailed results page of a contest",
+            "en": "Detailed results",
+            "es": "Resultados detallados",
+            "tl": "Mga detalyadong resulta",
+            "zh": "详细结果"
         },
         "language_chinese": {
             "_desc": "The Chinese language (e.g. for the toggle)",
@@ -106,6 +113,28 @@
             "es": "{0} de {1} Recintos electorales reportados",
             "tl": "{0} sa {1} Iniulat na mga Presinto",
             "zh": "{1}個投票區中的{0}個"
+        },
+        "preliminary_report_N": {
+            "_desc": "Used for report titles",
+            "_params": [
+                "report_number"
+            ],
+            "en": "Preliminary Report {0}",
+            "es": "Informe preliminar {0}",
+            "tl": "Paunang Ulat {0}",
+            "zh": "初步报告{0}"
+        },
+        "registration_and_turnout_header": {
+            "en": "Registration and Turnout",
+            "es": "Registro y participación",
+            "tl": "Pagrehistro at Pag-turnout",
+            "zh": "注册和投票率"
+        },
+        "summary_results_header": {
+            "en": "Summary Results",
+            "es": "Resultados resumidos",
+            "tl": "Mga Resulta ng Buod",
+            "zh": "摘要结果"
         },
         "switch_language": {
             "_desc": "Text preceding the language toggle at the top of each page.",

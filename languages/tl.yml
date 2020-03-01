@@ -4,11 +4,11 @@ phrases:
   detailed_reports_and_downloads:
     _desc: Text for the hyperlink to the "Detailed reports and downloads" page
     _text: Detailed reports and downloads
-    filipino: Detalyadong Ulat
+    filipino: Mga detalyadong ulat at pag-download
   detailed_results_label:
     _desc: Text for the hyperlink to the detailed results page of a contest
     _text: Detailed results
-    filipino: ''
+    filipino: Mga detalyadong resulta
   language_chinese:
     _desc: The Chinese language (e.g. for the toggle)
     _text: Chinese
@@ -59,13 +59,13 @@ phrases:
     _params:
     - report_number
     _text: Preliminary Report {0}
-    filipino: ''
+    filipino: Paunang Ulat {0}
   registration_and_turnout_header:
     _text: Registration and Turnout
-    filipino: ''
+    filipino: Pagrehistro at Pag-turnout
   summary_results_header:
     _text: Summary Results
-    filipino: ''
+    filipino: Mga Resulta ng Buod
   switch_language:
     _desc: Text preceding the language toggle at the top of each page.
     _text: Change language

@@ -4,11 +4,11 @@ phrases:
   detailed_reports_and_downloads:
     _desc: Text for the hyperlink to the "Detailed reports and downloads" page
     _text: Detailed reports and downloads
-    chinese: ''
+    chinese: 详细的报告和下载
   detailed_results_label:
     _desc: Text for the hyperlink to the detailed results page of a contest
     _text: Detailed results
-    chinese: ''
+    chinese: 详细结果
   language_chinese:
     _desc: The Chinese language (e.g. for the toggle)
     _text: Chinese
@@ -59,13 +59,13 @@ phrases:
     _params:
     - report_number
     _text: Preliminary Report {0}
-    chinese: ''
+    chinese: 初步报告{0}
   registration_and_turnout_header:
     _text: Registration and Turnout
-    chinese: ''
+    chinese: 注册和投票率
   summary_results_header:
     _text: Summary Results
-    chinese: ''
+    chinese: 摘要结果
   switch_language:
     _desc: Text preceding the language toggle at the top of each page.
     _text: Change language

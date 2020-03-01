@@ -4,11 +4,11 @@ phrases:
   detailed_reports_and_downloads:
     _desc: Text for the hyperlink to the "Detailed reports and downloads" page
     _text: Detailed reports and downloads
-    spanish: Reporte detallado
+    spanish: Informes detallados y descargas
   detailed_results_label:
     _desc: Text for the hyperlink to the detailed results page of a contest
     _text: Detailed results
-    spanish: ''
+    spanish: Resultados detallados
   language_chinese:
     _desc: The Chinese language (e.g. for the toggle)
     _text: Chinese
@@ -59,13 +59,13 @@ phrases:
     _params:
     - report_number
     _text: Preliminary Report {0}
-    spanish: ''
+    spanish: Informe preliminar {0}
   registration_and_turnout_header:
     _text: Registration and Turnout
-    spanish: ''
+    spanish: Registro y participación
   summary_results_header:
     _text: Summary Results
-    spanish: ''
+    spanish: Resultados resumidos
   switch_language:
     _desc: Text preceding the language toggle at the top of each page.
     _text: Change language
