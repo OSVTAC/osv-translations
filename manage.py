@@ -136,12 +136,10 @@ def iter_source_phrases(source_phrases):
       source_phrases: the value of the "phrases" key in the source
         `index.yml` file.
     """
-    for phrase_data in source_phrases:
+    for phrase_id, phrase_data in source_phrases.items():
         new_phrase_data = {
             f'_{key}': value for key, value in phrase_data.items()
         }
-
-        phrase_id = new_phrase_data.pop('_id')
 
         yield (phrase_id, new_phrase_data)
 
