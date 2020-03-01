@@ -4,7 +4,7 @@ phrases:
   category_ballots_cast:
     _desc: RSCst
     _text: Ballots Cast
-    filipino: ''
+    filipino: Mga Inihulog na Balota
   category_ballots_counted:
     _desc: RSTot
     _text: Ballots Counted
@@ -24,7 +24,7 @@ phrases:
   category_election_day:
     _desc: ED
     _text: Election Day
-    filipino: ''
+    filipino: Araw ng Eleksyon
   category_eligible_voters:
     _desc: RSEli
     _text: Eligible Voters
@@ -44,7 +44,11 @@ phrases:
   category_overvotes:
     _desc: RSOvr
     _text: Overvotes
-    filipino: ''
+    filipino: Mga sobrang boto
+  category_percentage:
+    _desc: Percent column header
+    _text: Percent
+    filipino: Porsiyento
   category_provisional_voting:
     _desc: PV
     _text: Provisional Voting
@@ -53,6 +57,10 @@ phrases:
     _desc: RSReg
     _text: Registered Voters
     filipino: ''
+  category_round:
+    _desc: RCV Round column header
+    _text: Round
+    filipino: ''
   category_skipped_votes:
     _desc: RSSki
     _text: Skipped Votes
@@ -60,15 +68,15 @@ phrases:
   category_total:
     _desc: TO
     _text: Total
-    filipino: ''
+    filipino: Kabuuan
   category_undervotes:
     _desc: RSUnd
     _text: Undervotes
-    filipino: ''
+    filipino: Mga kulang na boto
   category_vote_by_mail:
     _desc: MV
     _text: Vote By Mail
-    filipino: ''
+    filipino: Pagboto sa pamamagitan ng Koreo
   category_voter_turnout:
     _desc: RSTrn
     _text: Voter Turnout
@@ -77,6 +85,10 @@ phrases:
     _desc: RSVot
     _text: Voters Participating
     filipino: ''
+  category_votes:
+    _desc: Votes column header
+    _text: Votes
+    filipino: Mga Inihulog na Balota
   category_writein_votes:
     _desc: RSWri
     _text: Writein Votes
@@ -133,7 +145,7 @@ phrases:
     - reported_precinct_count
     - total_precinct_count
     _text: '{0} of {1} Precincts Reporting'
-    filipino: '{0} sa {1} Iniulat na mga Presinto'
+    filipino: '{0} sa {1} Rehistradong Botante'
   preliminary_report_N:
     _desc: Used for report titles
     _params:
@@ -142,7 +154,7 @@ phrases:
     filipino: Paunang Ulat {0}
   registration_and_turnout_header:
     _text: Registration and Turnout
-    filipino: Pagrehistro at Pag-turnout
+    filipino: Kabuuan ng Rehistrasyon at Nagsidalo
   summary_results_header:
     _text: Summary Results
     filipino: Mga Resulta ng Buod

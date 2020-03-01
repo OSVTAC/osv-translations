@@ -4,7 +4,7 @@ phrases:
   category_ballots_cast:
     _desc: RSCst
     _text: Ballots Cast
-    chinese: ''
+    chinese: 投票
   category_ballots_counted:
     _desc: RSTot
     _text: Ballots Counted
@@ -24,7 +24,7 @@ phrases:
   category_election_day:
     _desc: ED
     _text: Election Day
-    chinese: ''
+    chinese: 投票日
   category_eligible_voters:
     _desc: RSEli
     _text: Eligible Voters
@@ -44,7 +44,11 @@ phrases:
   category_overvotes:
     _desc: RSOvr
     _text: Overvotes
-    chinese: ''
+    chinese: 過度投票
+  category_percentage:
+    _desc: Percent column header
+    _text: Percent
+    chinese: 百分比
   category_provisional_voting:
     _desc: PV
     _text: Provisional Voting
@@ -53,6 +57,10 @@ phrases:
     _desc: RSReg
     _text: Registered Voters
     chinese: ''
+  category_round:
+    _desc: RCV Round column header
+    _text: Round
+    chinese: ''
   category_skipped_votes:
     _desc: RSSki
     _text: Skipped Votes
@@ -60,15 +68,15 @@ phrases:
   category_total:
     _desc: TO
     _text: Total
-    chinese: ''
+    chinese: 總共
   category_undervotes:
     _desc: RSUnd
     _text: Undervotes
-    chinese: ''
+    chinese: 投票不足
   category_vote_by_mail:
     _desc: MV
     _text: Vote By Mail
-    chinese: ''
+    chinese: 郵寄投票
   category_voter_turnout:
     _desc: RSTrn
     _text: Voter Turnout
@@ -77,6 +85,10 @@ phrases:
     _desc: RSVot
     _text: Voters Participating
     chinese: ''
+  category_votes:
+    _desc: Votes column header
+    _text: Votes
+    chinese: 投票
   category_writein_votes:
     _desc: RSWri
     _text: Writein Votes
@@ -133,7 +145,7 @@ phrases:
     - reported_precinct_count
     - total_precinct_count
     _text: '{0} of {1} Precincts Reporting'
-    chinese: '{1}個投票區中的{0}個'
+    chinese: '登記選民人數: {0} of {1}'
   preliminary_report_N:
     _desc: Used for report titles
     _params:
@@ -142,7 +154,7 @@ phrases:
     chinese: 初步报告{0}
   registration_and_turnout_header:
     _text: Registration and Turnout
-    chinese: 注册和投票率
+    chinese: 總登記和投票率
   summary_results_header:
     _text: Summary Results
     chinese: 摘要结果

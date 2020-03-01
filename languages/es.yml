@@ -4,7 +4,7 @@ phrases:
   category_ballots_cast:
     _desc: RSCst
     _text: Ballots Cast
-    spanish: ''
+    spanish: Votos
   category_ballots_counted:
     _desc: RSTot
     _text: Ballots Counted
@@ -24,7 +24,7 @@ phrases:
   category_election_day:
     _desc: ED
     _text: Election Day
-    spanish: ''
+    spanish: Día de las Elecciones
   category_eligible_voters:
     _desc: RSEli
     _text: Eligible Voters
@@ -44,7 +44,11 @@ phrases:
   category_overvotes:
     _desc: RSOvr
     _text: Overvotes
-    spanish: ''
+    spanish: Sobrevotos
+  category_percentage:
+    _desc: Percent column header
+    _text: Percent
+    spanish: Porcentaje
   category_provisional_voting:
     _desc: PV
     _text: Provisional Voting
@@ -53,6 +57,10 @@ phrases:
     _desc: RSReg
     _text: Registered Voters
     spanish: ''
+  category_round:
+    _desc: RCV Round column header
+    _text: Round
+    spanish: ''
   category_skipped_votes:
     _desc: RSSki
     _text: Skipped Votes
@@ -60,15 +68,15 @@ phrases:
   category_total:
     _desc: TO
     _text: Total
-    spanish: ''
+    spanish: Total
   category_undervotes:
     _desc: RSUnd
     _text: Undervotes
-    spanish: ''
+    spanish: Votos insuficientes
   category_vote_by_mail:
     _desc: MV
     _text: Vote By Mail
-    spanish: ''
+    spanish: Voto por correo
   category_voter_turnout:
     _desc: RSTrn
     _text: Voter Turnout
@@ -77,6 +85,10 @@ phrases:
     _desc: RSVot
     _text: Voters Participating
     spanish: ''
+  category_votes:
+    _desc: Votes column header
+    _text: Votes
+    spanish: Votos
   category_writein_votes:
     _desc: RSWri
     _text: Writein Votes
@@ -133,7 +145,7 @@ phrases:
     - reported_precinct_count
     - total_precinct_count
     _text: '{0} of {1} Precincts Reporting'
-    spanish: '{0} de {1} Recintos electorales reportados'
+    spanish: '{0} de {1} Electores inscritos'
   preliminary_report_N:
     _desc: Used for report titles
     _params:
@@ -142,7 +154,7 @@ phrases:
     spanish: Informe preliminar {0}
   registration_and_turnout_header:
     _text: Registration and Turnout
-    spanish: Registro y participación
+    spanish: Inscripción y participación total
   summary_results_header:
     _text: Summary Results
     spanish: Resultados resumidos

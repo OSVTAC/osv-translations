@@ -12,6 +12,16 @@ languages:
     name: Chinese
     phrase_id: language_chinese
 phrases:
+  category_percentage:
+    desc: Percent column header
+    text: Percent
+  category_votes:
+    desc: Votes column header
+    text: Votes
+  category_round:
+    desc: RCV Round column header
+    text: Round
+
   # voting_groups
   category_total:
     desc: TO

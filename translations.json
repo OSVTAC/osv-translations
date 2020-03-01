@@ -18,6 +18,167 @@
         }
     },
     "translations": {
+        "category_ballots_cast": {
+            "_desc": "RSCst",
+            "en": "Ballots Cast",
+            "es": "Votos",
+            "tl": "Mga Inihulog na Balota",
+            "zh": "投票"
+        },
+        "category_ballots_counted": {
+            "_desc": "RSTot",
+            "en": "Ballots Counted",
+            "es": "",
+            "tl": "",
+            "zh": ""
+        },
+        "category_ballots_rejected": {
+            "_desc": "RSRej",
+            "en": "Ballots Rejected",
+            "es": "",
+            "tl": "",
+            "zh": ""
+        },
+        "category_ballots_uncounted": {
+            "_desc": "RSUnc",
+            "en": "Ballots Uncounted",
+            "es": "",
+            "tl": "",
+            "zh": ""
+        },
+        "category_early_voting": {
+            "_desc": "EV",
+            "en": "Early Voting",
+            "es": "",
+            "tl": "",
+            "zh": ""
+        },
+        "category_election_day": {
+            "_desc": "ED",
+            "en": "Election Day",
+            "es": "Día de las Elecciones",
+            "tl": "Araw ng Eleksyon",
+            "zh": "投票日"
+        },
+        "category_eligible_voters": {
+            "_desc": "RSEli",
+            "en": "Eligible Voters",
+            "es": "",
+            "tl": "",
+            "zh": ""
+        },
+        "category_exhausted_ballots": {
+            "_desc": "RSExh",
+            "en": "Exhausted Ballots",
+            "es": "",
+            "tl": "",
+            "zh": ""
+        },
+        "category_in_county": {
+            "_desc": "IA",
+            "en": "In-County",
+            "es": "",
+            "tl": "",
+            "zh": ""
+        },
+        "category_other_counties": {
+            "_desc": "XA",
+            "en": "Other Counties",
+            "es": "",
+            "tl": "",
+            "zh": ""
+        },
+        "category_overvotes": {
+            "_desc": "RSOvr",
+            "en": "Overvotes",
+            "es": "Sobrevotos",
+            "tl": "Mga sobrang boto",
+            "zh": "過度投票"
+        },
+        "category_percentage": {
+            "_desc": "Percent column header",
+            "en": "Percent",
+            "es": "Porcentaje",
+            "tl": "Porsiyento",
+            "zh": "百分比"
+        },
+        "category_provisional_voting": {
+            "_desc": "PV",
+            "en": "Provisional Voting",
+            "es": "",
+            "tl": "",
+            "zh": ""
+        },
+        "category_registered_voters": {
+            "_desc": "RSReg",
+            "en": "Registered Voters",
+            "es": "",
+            "tl": "",
+            "zh": ""
+        },
+        "category_round": {
+            "_desc": "RCV Round column header",
+            "en": "Round",
+            "es": "",
+            "tl": "",
+            "zh": ""
+        },
+        "category_skipped_votes": {
+            "_desc": "RSSki",
+            "en": "Skipped Votes",
+            "es": "",
+            "tl": "",
+            "zh": ""
+        },
+        "category_total": {
+            "_desc": "TO",
+            "en": "Total",
+            "es": "Total",
+            "tl": "Kabuuan",
+            "zh": "總共"
+        },
+        "category_undervotes": {
+            "_desc": "RSUnd",
+            "en": "Undervotes",
+            "es": "Votos insuficientes",
+            "tl": "Mga kulang na boto",
+            "zh": "投票不足"
+        },
+        "category_vote_by_mail": {
+            "_desc": "MV",
+            "en": "Vote By Mail",
+            "es": "Voto por correo",
+            "tl": "Pagboto sa pamamagitan ng Koreo",
+            "zh": "郵寄投票"
+        },
+        "category_voter_turnout": {
+            "_desc": "RSTrn",
+            "en": "Voter Turnout",
+            "es": "",
+            "tl": "",
+            "zh": ""
+        },
+        "category_voters_participating": {
+            "_desc": "RSVot",
+            "en": "Voters Participating",
+            "es": "",
+            "tl": "",
+            "zh": ""
+        },
+        "category_votes": {
+            "_desc": "Votes column header",
+            "en": "Votes",
+            "es": "Votos",
+            "tl": "Mga Inihulog na Balota",
+            "zh": "投票"
+        },
+        "category_writein_votes": {
+            "_desc": "RSWri",
+            "en": "Writein Votes",
+            "es": "",
+            "tl": "",
+            "zh": ""
+        },
         "detailed_reports_and_downloads": {
             "_desc": "Text for the hyperlink to the \"Detailed reports and downloads\" page",
             "en": "Detailed reports and downloads",
@@ -110,9 +271,9 @@
                 "total_precinct_count"
             ],
             "en": "{0} of {1} Precincts Reporting",
-            "es": "{0} de {1} Recintos electorales reportados",
-            "tl": "{0} sa {1} Iniulat na mga Presinto",
-            "zh": "{1}個投票區中的{0}個"
+            "es": "{0} de {1} Electores inscritos",
+            "tl": "{0} sa {1} Rehistradong Botante",
+            "zh": "登記選民人數: {0} of {1}"
         },
         "preliminary_report_N": {
             "_desc": "Used for report titles",
@@ -126,9 +287,9 @@
         },
         "registration_and_turnout_header": {
             "en": "Registration and Turnout",
-            "es": "Registro y participación",
-            "tl": "Pagrehistro at Pag-turnout",
-            "zh": "注册和投票率"
+            "es": "Inscripción y participación total",
+            "tl": "Kabuuan ng Rehistrasyon at Nagsidalo",
+            "zh": "總登記和投票率"
         },
         "summary_results_header": {
             "en": "Summary Results",
