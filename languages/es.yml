@@ -1,6 +1,86 @@
 _meta:
   language: Spanish
 phrases:
+  category_ballots_cast:
+    _desc: RSCst
+    _text: Ballots Cast
+    spanish: ''
+  category_ballots_counted:
+    _desc: RSTot
+    _text: Ballots Counted
+    spanish: ''
+  category_ballots_rejected:
+    _desc: RSRej
+    _text: Ballots Rejected
+    spanish: ''
+  category_ballots_uncounted:
+    _desc: RSUnc
+    _text: Ballots Uncounted
+    spanish: ''
+  category_early_voting:
+    _desc: EV
+    _text: Early Voting
+    spanish: ''
+  category_election_day:
+    _desc: ED
+    _text: Election Day
+    spanish: ''
+  category_eligible_voters:
+    _desc: RSEli
+    _text: Eligible Voters
+    spanish: ''
+  category_exhausted_ballots:
+    _desc: RSExh
+    _text: Exhausted Ballots
+    spanish: ''
+  category_in_county:
+    _desc: IA
+    _text: In-County
+    spanish: ''
+  category_other_counties:
+    _desc: XA
+    _text: Other Counties
+    spanish: ''
+  category_overvotes:
+    _desc: RSOvr
+    _text: Overvotes
+    spanish: ''
+  category_provisional_voting:
+    _desc: PV
+    _text: Provisional Voting
+    spanish: ''
+  category_registered_voters:
+    _desc: RSReg
+    _text: Registered Voters
+    spanish: ''
+  category_skipped_votes:
+    _desc: RSSki
+    _text: Skipped Votes
+    spanish: ''
+  category_total:
+    _desc: TO
+    _text: Total
+    spanish: ''
+  category_undervotes:
+    _desc: RSUnd
+    _text: Undervotes
+    spanish: ''
+  category_vote_by_mail:
+    _desc: MV
+    _text: Vote By Mail
+    spanish: ''
+  category_voter_turnout:
+    _desc: RSTrn
+    _text: Voter Turnout
+    spanish: ''
+  category_voters_participating:
+    _desc: RSVot
+    _text: Voters Participating
+    spanish: ''
+  category_writein_votes:
+    _desc: RSWri
+    _text: Writein Votes
+    spanish: ''
   detailed_reports_and_downloads:
     _desc: Text for the hyperlink to the "Detailed reports and downloads" page
     _text: Detailed reports and downloads

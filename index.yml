@@ -12,6 +12,70 @@ languages:
     name: Chinese
     phrase_id: language_chinese
 phrases:
+  # voting_groups
+  category_total:
+    desc: TO
+    text: Total
+  category_election_day:
+    desc: ED
+    text: Election Day
+  category_vote_by_mail:
+    desc: MV
+    text: Vote By Mail
+  category_early_voting:
+    desc: EV
+    text: Early Voting
+  category_in_county:
+    desc: IA
+    text: In-County
+  category_other_counties:
+    desc: XA
+    text: Other Counties
+  category_provisional_voting:
+    desc: PV
+    text: Provisional Voting
+
+  # result_stat_types
+  category_ballots_counted:
+    desc: RSTot
+    text: Ballots Counted
+  category_voters_participating:
+    desc: RSVot
+    text: Voters Participating
+  category_ballots_cast:
+    desc: RSCst
+    text: Ballots Cast
+  category_registered_voters:
+    desc: RSReg
+    text: Registered Voters
+  category_eligible_voters:
+    desc: RSEli
+    text: Eligible Voters
+  category_voter_turnout:
+    desc: RSTrn
+    text: Voter Turnout
+  category_ballots_rejected:
+    desc: RSRej
+    text: Ballots Rejected
+  category_ballots_uncounted:
+    desc: RSUnc
+    text: Ballots Uncounted
+  category_writein_votes:
+    desc: RSWri
+    text: Writein Votes
+  category_undervotes:
+    desc: RSUnd
+    text: Undervotes
+  category_overvotes:
+    desc: RSOvr
+    text: Overvotes
+  category_skipped_votes:
+    desc: RSSki
+    text: Skipped Votes
+  category_exhausted_ballots:
+    desc: RSExh
+    text: Exhausted Ballots
+
   detailed_results_label:
     desc: Text for the hyperlink to the detailed results page of a contest
     text: Detailed results

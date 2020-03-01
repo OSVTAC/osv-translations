@@ -1,6 +1,86 @@
 _meta:
   language: Chinese
 phrases:
+  category_ballots_cast:
+    _desc: RSCst
+    _text: Ballots Cast
+    chinese: ''
+  category_ballots_counted:
+    _desc: RSTot
+    _text: Ballots Counted
+    chinese: ''
+  category_ballots_rejected:
+    _desc: RSRej
+    _text: Ballots Rejected
+    chinese: ''
+  category_ballots_uncounted:
+    _desc: RSUnc
+    _text: Ballots Uncounted
+    chinese: ''
+  category_early_voting:
+    _desc: EV
+    _text: Early Voting
+    chinese: ''
+  category_election_day:
+    _desc: ED
+    _text: Election Day
+    chinese: ''
+  category_eligible_voters:
+    _desc: RSEli
+    _text: Eligible Voters
+    chinese: ''
+  category_exhausted_ballots:
+    _desc: RSExh
+    _text: Exhausted Ballots
+    chinese: ''
+  category_in_county:
+    _desc: IA
+    _text: In-County
+    chinese: ''
+  category_other_counties:
+    _desc: XA
+    _text: Other Counties
+    chinese: ''
+  category_overvotes:
+    _desc: RSOvr
+    _text: Overvotes
+    chinese: ''
+  category_provisional_voting:
+    _desc: PV
+    _text: Provisional Voting
+    chinese: ''
+  category_registered_voters:
+    _desc: RSReg
+    _text: Registered Voters
+    chinese: ''
+  category_skipped_votes:
+    _desc: RSSki
+    _text: Skipped Votes
+    chinese: ''
+  category_total:
+    _desc: TO
+    _text: Total
+    chinese: ''
+  category_undervotes:
+    _desc: RSUnd
+    _text: Undervotes
+    chinese: ''
+  category_vote_by_mail:
+    _desc: MV
+    _text: Vote By Mail
+    chinese: ''
+  category_voter_turnout:
+    _desc: RSTrn
+    _text: Voter Turnout
+    chinese: ''
+  category_voters_participating:
+    _desc: RSVot
+    _text: Voters Participating
+    chinese: ''
+  category_writein_votes:
+    _desc: RSWri
+    _text: Writein Votes
+    chinese: ''
   detailed_reports_and_downloads:
     _desc: Text for the hyperlink to the "Detailed reports and downloads" page
     _text: Detailed reports and downloads
