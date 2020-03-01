@@ -96,7 +96,7 @@
             "tl": "Republikano",
             "zh": "共和黨"
         },
-        "precincts_reporting": {
+        "precincts_reporting_N_of_M": {
             "_desc": "Phrase describing how many precincts have reported (in N of M format)",
             "_params": [
                 "reported_precinct_count",

@@ -12,9 +12,14 @@ languages:
     name: Chinese
     phrase_id: language_chinese
 phrases:
+  - id: detailed_results_label
+    desc: Text for the hyperlink to the detailed results page of a contest
+    text: Detailed results
   - id: detailed_reports_and_downloads
     desc: Text for the hyperlink to the "Detailed reports and downloads" page
     text: Detailed reports and downloads
+
+  # Languages
   - id: language_chinese
     desc: The Chinese language (e.g. for the toggle)
     text: Chinese
@@ -27,6 +32,7 @@ phrases:
   - id: language_spanish
     desc: The Spanish language (e.g. for the toggle)
     text: Spanish
+
   - id: last_updated
     desc: Label for last published date
     text: Last published
@@ -45,12 +51,21 @@ phrases:
   - id: party_REP
     text: Republican
 
-  - id: precincts_reporting
+  - id: precincts_reporting_N_of_M
     desc: Phrase describing how many precincts have reported (in N of M format)
     params:
       - reported_precinct_count
       - total_precinct_count
     text: "{0} of {1} Precincts Reporting"
+  - id: registration_and_turnout_header
+    text: Registration and Turnout
+  - id: summary_results_header
+    text: Summary Results
   - id: switch_language
     desc: Text preceding the language toggle at the top of each page.
     text: Change language
+  - id: preliminary_report_N
+    params:
+      - report_number
+    desc: Used for report titles
+    text: Preliminary Report {0}
