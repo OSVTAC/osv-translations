@@ -86,6 +86,10 @@ phrases:
     desc: RSExh
     text: Exhausted Ballots
 
+  consolidated_pres_primary_election:
+    desc: For the election title
+    text: Consolidated Presidential Primary Election
+
   detailed_results_label:
     desc: Text for the hyperlink to the detailed results page of a contest
     text: Detailed results

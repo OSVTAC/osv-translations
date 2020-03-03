@@ -93,6 +93,10 @@ phrases:
     _desc: RSWri
     _text: Writein Votes
     chinese: ''
+  consolidated_pres_primary_election:
+    _desc: For the election title
+    _text: Consolidated Presidential Primary Election
+    chinese: 聯合總統初選
   detailed_reports_and_downloads:
     _desc: Text for the hyperlink to the "Detailed reports and downloads" page
     _text: Detailed reports and downloads

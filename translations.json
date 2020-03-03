@@ -179,6 +179,13 @@
             "tl": "",
             "zh": ""
         },
+        "consolidated_pres_primary_election": {
+            "_desc": "For the election title",
+            "en": "Consolidated Presidential Primary Election",
+            "es": "Elecciones Presidenciales Primarias Consolidadas",
+            "tl": "Pinagsamang Primaryang Eleksyon para sa Pagkapangulo",
+            "zh": "聯合總統初選"
+        },
         "detailed_reports_and_downloads": {
             "_desc": "Text for the hyperlink to the \"Detailed reports and downloads\" page",
             "en": "Detailed reports and downloads",
