@@ -5,10 +5,6 @@ phrases:
     _desc: RSCst
     _text: Ballots Cast
     filipino: Mga Inihulog na Balota
-  category_ballots_counted:
-    _desc: RSTot
-    _text: Ballots Counted
-    filipino: ''
   category_ballots_rejected:
     _desc: RSRej
     _text: Ballots Rejected
@@ -41,10 +37,6 @@ phrases:
     _desc: XA
     _text: Other Counties
     filipino: ''
-  category_overvotes:
-    _desc: RSOvr
-    _text: Overvotes
-    filipino: Mga sobrang boto
   category_percentage:
     _desc: Percent column header
     _text: Percent
@@ -69,10 +61,6 @@ phrases:
     _desc: TO
     _text: Total
     filipino: Kabuuan
-  category_undervotes:
-    _desc: RSUnd
-    _text: Undervotes
-    filipino: Mga kulang na boto
   category_vote_by_mail:
     _desc: MV
     _text: Vote By Mail
@@ -89,7 +77,19 @@ phrases:
     _desc: Votes column header
     _text: Votes
     filipino: Mga Inihulog na Balota
-  category_writein_votes:
+  category_votes_choices_total:
+    _desc: 'RSTot: Total votes for choices'
+    _text: Total Votes
+    filipino: Kabuuan
+  category_votes_overvotes:
+    _desc: RSOvr
+    _text: Overvotes
+    filipino: Mga sobrang boto
+  category_votes_undervotes:
+    _desc: RSUnd
+    _text: Undervotes
+    filipino: Mga kulang na boto
+  category_votes_writein:
     _desc: RSWri
     _text: Writein Votes
     filipino: ''

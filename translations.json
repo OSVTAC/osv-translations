@@ -25,13 +25,6 @@
             "tl": "Mga Inihulog na Balota",
             "zh": "投票"
         },
-        "category_ballots_counted": {
-            "_desc": "RSTot",
-            "en": "Ballots Counted",
-            "es": "",
-            "tl": "",
-            "zh": ""
-        },
         "category_ballots_rejected": {
             "_desc": "RSRej",
             "en": "Ballots Rejected",
@@ -88,13 +81,6 @@
             "tl": "",
             "zh": ""
         },
-        "category_overvotes": {
-            "_desc": "RSOvr",
-            "en": "Overvotes",
-            "es": "Sobrevotos",
-            "tl": "Mga sobrang boto",
-            "zh": "過度投票"
-        },
         "category_percentage": {
             "_desc": "Percent column header",
             "en": "Percent",
@@ -137,13 +123,6 @@
             "tl": "Kabuuan",
             "zh": "總共"
         },
-        "category_undervotes": {
-            "_desc": "RSUnd",
-            "en": "Undervotes",
-            "es": "Votos insuficientes",
-            "tl": "Mga kulang na boto",
-            "zh": "投票不足"
-        },
         "category_vote_by_mail": {
             "_desc": "MV",
             "en": "Vote By Mail",
@@ -172,7 +151,28 @@
             "tl": "Mga Inihulog na Balota",
             "zh": "投票"
         },
-        "category_writein_votes": {
+        "category_votes_choices_total": {
+            "_desc": "RSTot: Total votes for choices",
+            "en": "Total Votes",
+            "es": "Total",
+            "tl": "Kabuuan",
+            "zh": "總共"
+        },
+        "category_votes_overvotes": {
+            "_desc": "RSOvr",
+            "en": "Overvotes",
+            "es": "Sobrevotos",
+            "tl": "Mga sobrang boto",
+            "zh": "過度投票"
+        },
+        "category_votes_undervotes": {
+            "_desc": "RSUnd",
+            "en": "Undervotes",
+            "es": "Votos insuficientes",
+            "tl": "Mga kulang na boto",
+            "zh": "投票不足"
+        },
+        "category_votes_writein": {
             "_desc": "RSWri",
             "en": "Writein Votes",
             "es": "",

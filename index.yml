@@ -46,9 +46,6 @@ phrases:
     text: Provisional Voting
 
   # result_stat_types
-  category_ballots_counted:
-    desc: RSTot
-    text: Ballots Counted
   category_voters_participating:
     desc: RSVot
     text: Voters Participating
@@ -70,15 +67,18 @@ phrases:
   category_ballots_uncounted:
     desc: RSUnc
     text: Ballots Uncounted
-  category_writein_votes:
-    desc: RSWri
-    text: Writein Votes
-  category_undervotes:
+  category_votes_undervotes:
     desc: RSUnd
     text: Undervotes
-  category_overvotes:
+  category_votes_overvotes:
     desc: RSOvr
     text: Overvotes
+  category_votes_writein:
+    desc: RSWri
+    text: Writein Votes
+  category_votes_choices_total:
+    desc: "RSTot: Total votes for choices"
+    text: Total Votes
   category_skipped_votes:
     desc: RSSki
     text: Skipped Votes

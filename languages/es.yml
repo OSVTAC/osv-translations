@@ -5,10 +5,6 @@ phrases:
     _desc: RSCst
     _text: Ballots Cast
     spanish: Votos
-  category_ballots_counted:
-    _desc: RSTot
-    _text: Ballots Counted
-    spanish: ''
   category_ballots_rejected:
     _desc: RSRej
     _text: Ballots Rejected
@@ -41,10 +37,6 @@ phrases:
     _desc: XA
     _text: Other Counties
     spanish: ''
-  category_overvotes:
-    _desc: RSOvr
-    _text: Overvotes
-    spanish: Sobrevotos
   category_percentage:
     _desc: Percent column header
     _text: Percent
@@ -69,10 +61,6 @@ phrases:
     _desc: TO
     _text: Total
     spanish: Total
-  category_undervotes:
-    _desc: RSUnd
-    _text: Undervotes
-    spanish: Votos insuficientes
   category_vote_by_mail:
     _desc: MV
     _text: Vote By Mail
@@ -89,7 +77,19 @@ phrases:
     _desc: Votes column header
     _text: Votes
     spanish: Votos
-  category_writein_votes:
+  category_votes_choices_total:
+    _desc: 'RSTot: Total votes for choices'
+    _text: Total Votes
+    spanish: Total
+  category_votes_overvotes:
+    _desc: RSOvr
+    _text: Overvotes
+    spanish: Sobrevotos
+  category_votes_undervotes:
+    _desc: RSUnd
+    _text: Undervotes
+    spanish: Votos insuficientes
+  category_votes_writein:
     _desc: RSWri
     _text: Writein Votes
     spanish: ''
