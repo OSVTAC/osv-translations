@@ -22,7 +22,7 @@ phrases:
     _text: Election Day
     filipino: Araw ng Eleksyon
   category_eligible_voters:
-    _desc: RSEli
+    _desc: 'RSEli: Label for the number of people eligible to register to vote.'
     _text: Eligible Voters
     filipino: ''
   category_exhausted_ballots:
@@ -66,7 +66,7 @@ phrases:
     _text: Vote By Mail
     filipino: Pagboto sa pamamagitan ng Koreo
   category_voter_turnout:
-    _desc: RSTrn
+    _desc: 'RSTrn: Label for the number of people that voted'
     _text: Voter Turnout
     filipino: ''
   category_voters_participating:
@@ -78,7 +78,8 @@ phrases:
     _text: Votes
     filipino: Mga Inihulog na Balota
   category_votes_choices_total:
-    _desc: 'RSTot: Total votes for choices'
+    _desc: 'RSTot: Label for the number of valid votes (i.e. votes for candidates,
+      and not including undervotes and overvotes).'
     _text: Total Votes
     filipino: Kabuuan
   category_votes_overvotes:
@@ -90,21 +91,33 @@ phrases:
     _text: Undervotes
     filipino: Mga kulang na boto
   category_votes_writein:
-    _desc: RSWri
-    _text: Writein Votes
+    _desc: 'RSWri: Label for the number of write-in votes'
+    _text: Write-in Votes
     filipino: ''
   consolidated_pres_primary_election:
     _desc: For the election title
     _text: Consolidated Presidential Primary Election
     filipino: Pinagsamang Primaryang Eleksyon para sa Pagkapangulo
+  demo_footer:
+    _desc: HTML footer for the demo page.
+    _text: This is a <a href="link-1">demonstration</a> of the <a href="link-2">Open
+      Source Voting Results Reporter</a> (ORR) of the San Francisco Elections Commission's
+      <a href="link-3">Open Source Voting System Technical Advisory Committee</a>
+      (OSVTAC).
+    filipino: ''
   detailed_reports_and_downloads:
-    _desc: Text for the hyperlink to the "Detailed reports and downloads" page
+    _desc: Label for the hyperlink to the "Detailed reports and downloads" page
     _text: Detailed reports and downloads
     filipino: Mga detalyadong ulat at pag-download
   detailed_results_label:
-    _desc: Text for the hyperlink to the detailed results page of a contest
+    _desc: Label for the hyperlink to the detailed results page of a contest
     _text: Detailed results
     filipino: Mga detalyadong resulta
+  hyperlink_text_california_results:
+    _desc: Label for the hyperlink to the state results page for the contest or the
+      election as a whole.
+    _text: CA State results
+    filipino: ''
   language_chinese:
     _desc: The Chinese language (e.g. for the toggle)
     _text: Chinese
@@ -156,6 +169,11 @@ phrases:
     - report_number
     _text: Preliminary Report {0}
     filipino: Paunang Ulat {0}
+  question_text_label:
+    _desc: Label for the button that expands the question text for a state or local
+      measure.
+    _text: Question text
+    filipino: ''
   registration_and_turnout_header:
     _text: Registration and Turnout
     filipino: Kabuuan ng Rehistrasyon at Nagsidalo
@@ -166,3 +184,21 @@ phrases:
     _desc: Text preceding the language toggle at the top of each page.
     _text: Change language
     filipino: Lumipat wika
+  write_in_modifier:
+    _desc: Phrase that will be in parentheses following a candidate name to indicate
+      that the candidate is an official write-in candidate.
+    _text: write-in
+    filipino: ''
+  write_in_unreviewed_qualifier:
+    _desc: Phrase that will be in parentheses following "Write-in Votes" to clarify
+      that these write-in votes haven't been manually reviewed yet.
+    _text: not yet reviewed
+    filipino: ''
+  yes_vote_threshold:
+    _desc: Text saying what fraction or percent threshold of affirmative votes (aka
+      "yes votes") are needed for a state or local measure to pass. For example, "Requires
+      50%+1 affirmative votes to pass".
+    _params:
+    - percent_threshold
+    _text: Requires {0} affirmative votes to pass
+    filipino: ''

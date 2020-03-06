@@ -22,7 +22,7 @@ phrases:
     _text: Election Day
     chinese: 投票日
   category_eligible_voters:
-    _desc: RSEli
+    _desc: 'RSEli: Label for the number of people eligible to register to vote.'
     _text: Eligible Voters
     chinese: ''
   category_exhausted_ballots:
@@ -66,7 +66,7 @@ phrases:
     _text: Vote By Mail
     chinese: 郵寄投票
   category_voter_turnout:
-    _desc: RSTrn
+    _desc: 'RSTrn: Label for the number of people that voted'
     _text: Voter Turnout
     chinese: ''
   category_voters_participating:
@@ -78,7 +78,8 @@ phrases:
     _text: Votes
     chinese: 投票
   category_votes_choices_total:
-    _desc: 'RSTot: Total votes for choices'
+    _desc: 'RSTot: Label for the number of valid votes (i.e. votes for candidates,
+      and not including undervotes and overvotes).'
     _text: Total Votes
     chinese: 總共
   category_votes_overvotes:
@@ -90,21 +91,33 @@ phrases:
     _text: Undervotes
     chinese: 投票不足
   category_votes_writein:
-    _desc: RSWri
-    _text: Writein Votes
+    _desc: 'RSWri: Label for the number of write-in votes'
+    _text: Write-in Votes
     chinese: ''
   consolidated_pres_primary_election:
     _desc: For the election title
     _text: Consolidated Presidential Primary Election
     chinese: 聯合總統初選
+  demo_footer:
+    _desc: HTML footer for the demo page.
+    _text: This is a <a href="link-1">demonstration</a> of the <a href="link-2">Open
+      Source Voting Results Reporter</a> (ORR) of the San Francisco Elections Commission's
+      <a href="link-3">Open Source Voting System Technical Advisory Committee</a>
+      (OSVTAC).
+    chinese: ''
   detailed_reports_and_downloads:
-    _desc: Text for the hyperlink to the "Detailed reports and downloads" page
+    _desc: Label for the hyperlink to the "Detailed reports and downloads" page
     _text: Detailed reports and downloads
     chinese: 详细的报告和下载
   detailed_results_label:
-    _desc: Text for the hyperlink to the detailed results page of a contest
+    _desc: Label for the hyperlink to the detailed results page of a contest
     _text: Detailed results
     chinese: 详细结果
+  hyperlink_text_california_results:
+    _desc: Label for the hyperlink to the state results page for the contest or the
+      election as a whole.
+    _text: CA State results
+    chinese: ''
   language_chinese:
     _desc: The Chinese language (e.g. for the toggle)
     _text: Chinese
@@ -156,6 +169,11 @@ phrases:
     - report_number
     _text: Preliminary Report {0}
     chinese: 初步报告{0}
+  question_text_label:
+    _desc: Label for the button that expands the question text for a state or local
+      measure.
+    _text: Question text
+    chinese: ''
   registration_and_turnout_header:
     _text: Registration and Turnout
     chinese: 總登記和投票率
@@ -166,3 +184,21 @@ phrases:
     _desc: Text preceding the language toggle at the top of each page.
     _text: Change language
     chinese: 切换语言
+  write_in_modifier:
+    _desc: Phrase that will be in parentheses following a candidate name to indicate
+      that the candidate is an official write-in candidate.
+    _text: write-in
+    chinese: ''
+  write_in_unreviewed_qualifier:
+    _desc: Phrase that will be in parentheses following "Write-in Votes" to clarify
+      that these write-in votes haven't been manually reviewed yet.
+    _text: not yet reviewed
+    chinese: ''
+  yes_vote_threshold:
+    _desc: Text saying what fraction or percent threshold of affirmative votes (aka
+      "yes votes") are needed for a state or local measure to pass. For example, "Requires
+      50%+1 affirmative votes to pass".
+    _params:
+    - percent_threshold
+    _text: Requires {0} affirmative votes to pass
+    chinese: ''
