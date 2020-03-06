@@ -56,10 +56,10 @@ phrases:
     desc: RSReg
     text: Registered Voters
   category_eligible_voters:
-    desc: RSEli
+    desc: "RSEli: Label for the number of people eligible to register to vote."
     text: Eligible Voters
   category_voter_turnout:
-    desc: RSTrn
+    desc: "RSTrn: Label for the number of people that voted"
     text: Voter Turnout
   category_ballots_rejected:
     desc: RSRej
@@ -74,10 +74,11 @@ phrases:
     desc: RSOvr
     text: Overvotes
   category_votes_writein:
-    desc: RSWri
-    text: Writein Votes
+    desc: "RSWri: Label for the number of write-in votes"
+    text: Write-in Votes
   category_votes_choices_total:
-    desc: "RSTot: Total votes for choices"
+    desc: "RSTot: Label for the number of valid votes (i.e. votes for
+      candidates, and not including undervotes and overvotes)."
     text: Total Votes
   category_skipped_votes:
     desc: RSSki
@@ -90,12 +91,24 @@ phrases:
     desc: For the election title
     text: Consolidated Presidential Primary Election
 
+  demo_footer:
+    desc: HTML footer for the demo page.
+    text: This is a <a href="link-1">demonstration</a> of the
+      <a href="link-2">Open Source Voting Results Reporter</a> (ORR) of the
+      San Francisco Elections Commission's <a href="link-3">Open Source
+      Voting System Technical Advisory Committee</a> (OSVTAC).
+
   detailed_results_label:
-    desc: Text for the hyperlink to the detailed results page of a contest
+    desc: Label for the hyperlink to the detailed results page of a contest
     text: Detailed results
   detailed_reports_and_downloads:
-    desc: Text for the hyperlink to the "Detailed reports and downloads" page
+    desc: Label for the hyperlink to the "Detailed reports and downloads" page
     text: Detailed reports and downloads
+
+  hyperlink_text_california_results:
+    desc: Label for the hyperlink to the state results page for the contest
+      or the election as a whole.
+    text: CA State results
 
   # Languages
   language_chinese:
@@ -147,3 +160,22 @@ phrases:
       - report_number
     desc: Used for report titles
     text: Preliminary Report {0}
+  question_text_label:
+    desc: Label for the button that expands the question text for a state
+      or local measure.
+    text: Question text
+  write_in_modifier:
+    desc: Phrase that will be in parentheses following a candidate name
+      to indicate that the candidate is an official write-in candidate.
+    text: write-in
+  write_in_unreviewed_qualifier:
+    desc: Phrase that will be in parentheses following "Write-in Votes"
+      to clarify that these write-in votes haven't been manually reviewed yet.
+    text: not yet reviewed
+  yes_vote_threshold:
+    desc: Text saying what fraction or percent threshold of affirmative
+       votes (aka "yes votes") are needed for a state or local measure to pass.
+       For example, "Requires 50%+1 affirmative votes to pass".
+    params:
+      - percent_threshold
+    text: Requires {0} affirmative votes to pass
