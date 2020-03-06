@@ -54,7 +54,7 @@
             "zh": "投票日"
         },
         "category_eligible_voters": {
-            "_desc": "RSEli",
+            "_desc": "RSEli: Label for the number of people eligible to register to vote.",
             "en": "Eligible Voters",
             "es": "",
             "tl": "",
@@ -98,9 +98,9 @@
         "category_registered_voters": {
             "_desc": "RSReg",
             "en": "Registered Voters",
-            "es": "",
-            "tl": "",
-            "zh": ""
+            "es": "Electores inscritos",
+            "tl": "Rehistradong Botante",
+            "zh": "登記選民人數"
         },
         "category_round": {
             "_desc": "RCV Round column header",
@@ -131,7 +131,7 @@
             "zh": "郵寄投票"
         },
         "category_voter_turnout": {
-            "_desc": "RSTrn",
+            "_desc": "RSTrn: Label for the number of people that voted",
             "en": "Voter Turnout",
             "es": "",
             "tl": "",
@@ -152,7 +152,7 @@
             "zh": "投票"
         },
         "category_votes_choices_total": {
-            "_desc": "RSTot: Total votes for choices",
+            "_desc": "RSTot: Label for the number of valid votes (i.e. votes for candidates, and not including undervotes and overvotes).",
             "en": "Total Votes",
             "es": "Total",
             "tl": "Kabuuan",
@@ -173,8 +173,8 @@
             "zh": "投票不足"
         },
         "category_votes_writein": {
-            "_desc": "RSWri",
-            "en": "Writein Votes",
+            "_desc": "RSWri: Label for the number of write-in votes",
+            "en": "Write-in Votes",
             "es": "",
             "tl": "",
             "zh": ""
@@ -186,19 +186,33 @@
             "tl": "Pinagsamang Primaryang Eleksyon para sa Pagkapangulo",
             "zh": "聯合總統初選"
         },
+        "demo_footer": {
+            "_desc": "HTML footer for the demo page.",
+            "en": "This is a <a href=\"link-1\">demonstration</a> of the <a href=\"link-2\">Open Source Voting Results Reporter</a> (ORR) of the San Francisco Elections Commission's <a href=\"link-3\">Open Source Voting System Technical Advisory Committee</a> (OSVTAC).",
+            "es": "",
+            "tl": "",
+            "zh": ""
+        },
         "detailed_reports_and_downloads": {
-            "_desc": "Text for the hyperlink to the \"Detailed reports and downloads\" page",
+            "_desc": "Label for the hyperlink to the \"Detailed reports and downloads\" page",
             "en": "Detailed reports and downloads",
             "es": "Informes detallados y descargas",
             "tl": "Mga detalyadong ulat at pag-download",
             "zh": "详细的报告和下载"
         },
         "detailed_results_label": {
-            "_desc": "Text for the hyperlink to the detailed results page of a contest",
+            "_desc": "Label for the hyperlink to the detailed results page of a contest",
             "en": "Detailed results",
             "es": "Resultados detallados",
             "tl": "Mga detalyadong resulta",
             "zh": "详细结果"
+        },
+        "hyperlink_text_california_results": {
+            "_desc": "Label for the hyperlink to the state results page for the contest or the election as a whole.",
+            "en": "CA State results",
+            "es": "",
+            "tl": "",
+            "zh": ""
         },
         "language_chinese": {
             "_desc": "The Chinese language (e.g. for the toggle)",
@@ -292,6 +306,13 @@
             "tl": "Paunang Ulat {0}",
             "zh": "初步报告{0}"
         },
+        "question_text_label": {
+            "_desc": "Label for the button that expands the question text for a state or local measure.",
+            "en": "Question text",
+            "es": "",
+            "tl": "",
+            "zh": ""
+        },
         "registration_and_turnout_header": {
             "en": "Registration and Turnout",
             "es": "Inscripción y participación total",
@@ -310,6 +331,30 @@
             "es": "Cambiar de idioma",
             "tl": "Lumipat wika",
             "zh": "切换语言"
+        },
+        "write_in_modifier": {
+            "_desc": "Phrase that will be in parentheses following a candidate name to indicate that the candidate is an official write-in candidate.",
+            "en": "write-in",
+            "es": "",
+            "tl": "",
+            "zh": ""
+        },
+        "write_in_unreviewed_qualifier": {
+            "_desc": "Phrase that will be in parentheses following \"Write-in Votes\" to clarify that these write-in votes haven't been manually reviewed yet.",
+            "en": "not yet reviewed",
+            "es": "",
+            "tl": "",
+            "zh": ""
+        },
+        "yes_vote_threshold": {
+            "_desc": "Text saying what fraction or percent threshold of affirmative votes (aka \"yes votes\") are needed for a state or local measure to pass. For example, \"Requires 50%+1 affirmative votes to pass\".",
+            "_params": [
+                "percent_threshold"
+            ],
+            "en": "Requires {0} affirmative votes to pass",
+            "es": "",
+            "tl": "",
+            "zh": ""
         }
     }
 }
