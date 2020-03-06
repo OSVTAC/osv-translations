@@ -48,7 +48,7 @@ phrases:
   category_registered_voters:
     _desc: RSReg
     _text: Registered Voters
-    spanish: ''
+    spanish: Electores inscritos
   category_round:
     _desc: RCV Round column header
     _text: Round

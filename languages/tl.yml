@@ -48,7 +48,7 @@ phrases:
   category_registered_voters:
     _desc: RSReg
     _text: Registered Voters
-    filipino: ''
+    filipino: Rehistradong Botante
   category_round:
     _desc: RCV Round column header
     _text: Round
