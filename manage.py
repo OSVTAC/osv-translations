@@ -22,6 +22,7 @@ import functools
 import json
 from pathlib import Path
 import sys
+from textwrap import dedent
 
 import yaml
 
@@ -119,6 +120,15 @@ def read_index():
     return (languages_data, phrases_data)
 
 
+def iter_lang_codes():
+    languages_data, _source_phrases = read_index()
+
+    lang_codes = sorted(languages_data)
+    lang_codes.remove(LANG_CODE_EN)
+
+    yield from lang_codes
+
+
 def get_lang_path(lang_code):
     return Path('languages') / f'{lang_code}.yml'
 
@@ -202,10 +212,7 @@ def update_from_index(check_mode=False):
     """
     languages_data, source_phrases = read_index()
 
-    lang_codes = sorted(languages_data)
-    lang_codes.remove(LANG_CODE_EN)
-
-    for lang_code in lang_codes:
+    for lang_code in iter_lang_codes():
         update_language_file(source_phrases, languages_data, lang_code=lang_code,
             check_mode=check_mode)
 
@@ -248,11 +255,7 @@ def build_json(check_mode=False):
 
         translations_data[phrase_id] = phrase_data
 
-    lang_codes = sorted(languages_data)
-    # We are done processing English.
-    lang_codes.remove(LANG_CODE_EN)
-
-    for lang_code in lang_codes:
+    for lang_code in iter_lang_codes():
         lang_data = languages_data[lang_code]
         lang_name = lang_data['name']
 
@@ -284,6 +287,48 @@ def check_updated():
     build_json(check_mode=True)
 
 
+def print_lang_todo(languages_data, lang_code):
+    lang_data = languages_data[lang_code]
+    lang_name = lang_data['name']
+    print(f'{lang_name}:')
+
+    lang_path = get_lang_path(lang_code)
+    data = read_lang_file(lang_path)
+    phrases_data = data['phrases']
+
+    index = 0
+    for phrase_id, phrase_data in phrases_data.items():
+        try:
+            lang_key = lang_name.lower()
+            if phrase_data.get(lang_key):
+                # Then the phrase already has a translation
+                continue
+
+            index += 1
+            desc = phrase_data['_desc']
+            english = phrase_data['_text']
+            output = dedent(f"""\
+            ({index}) {phrase_id}:
+            description: {desc}
+            English: {english}
+            {lang_name}: ???
+            """)
+            print(output)
+
+        except Exception:
+            raise RuntimeError(f'error while processing: {phrase_id!r}')
+
+
+def print_todo():
+    """
+    Print to stdout the translations needed for each language.
+    """
+    languages_data, phrases_data = read_index()
+
+    for lang_code in iter_lang_codes():
+        print_lang_todo(languages_data, lang_code=lang_code)
+
+
 def main():
     args = sys.argv[1:]
     command_name = args[0]
@@ -291,6 +336,7 @@ def main():
     manage_funcs = {
         'build_json': build_json,
         'check_updated': check_updated,
+        'print_todo': print_todo,
         'update_from_index': update_from_index,
     }
 
