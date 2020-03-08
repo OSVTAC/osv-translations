@@ -53,20 +53,6 @@
             "tl": "Araw ng Eleksyon",
             "zh": "投票日"
         },
-        "category_voters_eligible": {
-            "_desc": "RSEli: Label for the number of people eligible to register to vote.",
-            "en": "Eligible Voters",
-            "es": "",
-            "tl": "",
-            "zh": ""
-        },
-        "category_votes_rcv_exhausted": {
-            "_desc": "RSExh",
-            "en": "Exhausted Ballots",
-            "es": "",
-            "tl": "",
-            "zh": ""
-        },
         "category_in_county": {
             "_desc": "IA",
             "en": "In-County",
@@ -95,23 +81,9 @@
             "tl": "",
             "zh": ""
         },
-        "category_voters_registered": {
-            "_desc": "RSReg",
-            "en": "Registered Voters",
-            "es": "Electores inscritos",
-            "tl": "Rehistradong Botante",
-            "zh": "登記選民人數"
-        },
         "category_round": {
             "_desc": "RCV Round column header",
             "en": "Round",
-            "es": "",
-            "tl": "",
-            "zh": ""
-        },
-        "category_votes_skipped": {
-            "_desc": "RSSki",
-            "en": "Skipped Votes",
             "es": "",
             "tl": "",
             "zh": ""
@@ -137,12 +109,26 @@
             "tl": "",
             "zh": ""
         },
+        "category_voters_eligible": {
+            "_desc": "RSEli: Label for the number of people eligible to register to vote.",
+            "en": "Eligible Voters",
+            "es": "",
+            "tl": "",
+            "zh": ""
+        },
         "category_voters_participating": {
             "_desc": "RSVot",
             "en": "Voters Participating",
             "es": "",
             "tl": "",
             "zh": ""
+        },
+        "category_voters_registered": {
+            "_desc": "RSReg",
+            "en": "Registered Voters",
+            "es": "Electores inscritos",
+            "tl": "Rehistradong Botante",
+            "zh": "登記選民人數"
         },
         "category_votes": {
             "_desc": "Votes column header",
@@ -164,6 +150,20 @@
             "es": "Sobrevotos",
             "tl": "Mga sobrang boto",
             "zh": "過度投票"
+        },
+        "category_votes_rcv_exhausted": {
+            "_desc": "RSExh: Exhausted votes, for use in RCV contests.",
+            "en": "Exhausted Ballots",
+            "es": "",
+            "tl": "",
+            "zh": ""
+        },
+        "category_votes_skipped": {
+            "_desc": "RSSki",
+            "en": "Skipped Votes",
+            "es": "",
+            "tl": "",
+            "zh": ""
         },
         "category_votes_undervotes": {
             "_desc": "RSUnd",
@@ -306,6 +306,13 @@
             "tl": "Paunang Ulat {0}",
             "zh": "初步报告{0}"
         },
+        "quantity_modifier_estimated": {
+            "_desc": "Phrase that will be in parentheses following a label for a numeric total to indicate that the number is an estimate.",
+            "en": "estimated",
+            "es": "",
+            "tl": "",
+            "zh": ""
+        },
         "question_text_label": {
             "_desc": "Label for the button that expands the question text for a state or local measure.",
             "en": "Question text",
@@ -331,6 +338,13 @@
             "es": "Cambiar de idioma",
             "tl": "Lumipat wika",
             "zh": "切换语言"
+        },
+        "value_not_available": {
+            "_desc": "Phrase for inclusion as a value (e.g. cell value) to indicate that the value or item isn't available.",
+            "en": "N/A",
+            "es": "",
+            "tl": "",
+            "zh": ""
         },
         "write_in_candidate_modifier": {
             "_desc": "Phrase that will be in parentheses following a candidate name to indicate that the candidate is an official write-in candidate.",

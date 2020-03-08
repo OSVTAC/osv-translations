@@ -21,14 +21,6 @@ phrases:
     _desc: ED
     _text: Election Day
     spanish: Día de las Elecciones
-  category_voters_eligible:
-    _desc: 'RSEli: Label for the number of people eligible to register to vote.'
-    _text: Eligible Voters
-    spanish: ''
-  category_votes_rcv_exhausted:
-    _desc: RSExh
-    _text: Exhausted Ballots
-    spanish: ''
   category_in_county:
     _desc: IA
     _text: In-County
@@ -45,17 +37,9 @@ phrases:
     _desc: PV
     _text: Provisional Voting
     spanish: ''
-  category_voters_registered:
-    _desc: RSReg
-    _text: Registered Voters
-    spanish: Electores inscritos
   category_round:
     _desc: RCV Round column header
     _text: Round
-    spanish: ''
-  category_votes_skipped:
-    _desc: RSSki
-    _text: Skipped Votes
     spanish: ''
   category_total:
     _desc: TO
@@ -69,10 +53,18 @@ phrases:
     _desc: 'RSTrn: Label for the number of people that voted'
     _text: Voter Turnout
     spanish: ''
+  category_voters_eligible:
+    _desc: 'RSEli: Label for the number of people eligible to register to vote.'
+    _text: Eligible Voters
+    spanish: ''
   category_voters_participating:
     _desc: RSVot
     _text: Voters Participating
     spanish: ''
+  category_voters_registered:
+    _desc: RSReg
+    _text: Registered Voters
+    spanish: Electores inscritos
   category_votes:
     _desc: Votes column header
     _text: Votes
@@ -86,6 +78,14 @@ phrases:
     _desc: RSOvr
     _text: Overvotes
     spanish: Sobrevotos
+  category_votes_rcv_exhausted:
+    _desc: 'RSExh: Exhausted votes, for use in RCV contests.'
+    _text: Exhausted Ballots
+    spanish: ''
+  category_votes_skipped:
+    _desc: RSSki
+    _text: Skipped Votes
+    spanish: ''
   category_votes_undervotes:
     _desc: RSUnd
     _text: Undervotes
@@ -169,6 +169,11 @@ phrases:
     - report_number
     _text: Preliminary Report {0}
     spanish: Informe preliminar {0}
+  quantity_modifier_estimated:
+    _desc: Phrase that will be in parentheses following a label for a numeric total
+      to indicate that the number is an estimate.
+    _text: estimated
+    spanish: ''
   question_text_label:
     _desc: Label for the button that expands the question text for a state or local
       measure.
@@ -184,6 +189,11 @@ phrases:
     _desc: Text preceding the language toggle at the top of each page.
     _text: Change language
     spanish: Cambiar de idioma
+  value_not_available:
+    _desc: Phrase for inclusion as a value (e.g. cell value) to indicate that the
+      value or item isn't available.
+    _text: N/A
+    spanish: ''
   write_in_candidate_modifier:
     _desc: Phrase that will be in parentheses following a candidate name to indicate
       that the candidate is an official write-in candidate.
