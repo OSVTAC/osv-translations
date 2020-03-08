@@ -21,11 +21,11 @@ phrases:
     _desc: ED
     _text: Election Day
     spanish: Día de las Elecciones
-  category_eligible_voters:
+  category_voters_eligible:
     _desc: 'RSEli: Label for the number of people eligible to register to vote.'
     _text: Eligible Voters
     spanish: ''
-  category_exhausted_ballots:
+  category_votes_rcv_exhausted:
     _desc: RSExh
     _text: Exhausted Ballots
     spanish: ''
@@ -45,7 +45,7 @@ phrases:
     _desc: PV
     _text: Provisional Voting
     spanish: ''
-  category_registered_voters:
+  category_voters_registered:
     _desc: RSReg
     _text: Registered Voters
     spanish: Electores inscritos
@@ -53,7 +53,7 @@ phrases:
     _desc: RCV Round column header
     _text: Round
     spanish: ''
-  category_skipped_votes:
+  category_votes_skipped:
     _desc: RSSki
     _text: Skipped Votes
     spanish: ''
@@ -184,12 +184,12 @@ phrases:
     _desc: Text preceding the language toggle at the top of each page.
     _text: Change language
     spanish: Cambiar de idioma
-  write_in_modifier:
+  write_in_candidate_modifier:
     _desc: Phrase that will be in parentheses following a candidate name to indicate
       that the candidate is an official write-in candidate.
     _text: write-in
     spanish: ''
-  write_in_unreviewed_qualifier:
+  write_in_modifier_unreviewed:
     _desc: Phrase that will be in parentheses following "Write-in Votes" to clarify
       that these write-in votes haven't been manually reviewed yet.
     _text: not yet reviewed

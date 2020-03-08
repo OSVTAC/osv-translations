@@ -53,14 +53,14 @@
             "tl": "Araw ng Eleksyon",
             "zh": "投票日"
         },
-        "category_eligible_voters": {
+        "category_voters_eligible": {
             "_desc": "RSEli: Label for the number of people eligible to register to vote.",
             "en": "Eligible Voters",
             "es": "",
             "tl": "",
             "zh": ""
         },
-        "category_exhausted_ballots": {
+        "category_votes_rcv_exhausted": {
             "_desc": "RSExh",
             "en": "Exhausted Ballots",
             "es": "",
@@ -95,7 +95,7 @@
             "tl": "",
             "zh": ""
         },
-        "category_registered_voters": {
+        "category_voters_registered": {
             "_desc": "RSReg",
             "en": "Registered Voters",
             "es": "Electores inscritos",
@@ -109,7 +109,7 @@
             "tl": "",
             "zh": ""
         },
-        "category_skipped_votes": {
+        "category_votes_skipped": {
             "_desc": "RSSki",
             "en": "Skipped Votes",
             "es": "",
@@ -332,14 +332,14 @@
             "tl": "Lumipat wika",
             "zh": "切换语言"
         },
-        "write_in_modifier": {
+        "write_in_candidate_modifier": {
             "_desc": "Phrase that will be in parentheses following a candidate name to indicate that the candidate is an official write-in candidate.",
             "en": "write-in",
             "es": "",
             "tl": "",
             "zh": ""
         },
-        "write_in_unreviewed_qualifier": {
+        "write_in_modifier_unreviewed": {
             "_desc": "Phrase that will be in parentheses following \"Write-in Votes\" to clarify that these write-in votes haven't been manually reviewed yet.",
             "en": "not yet reviewed",
             "es": "",

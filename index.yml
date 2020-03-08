@@ -46,46 +46,46 @@ phrases:
     text: Provisional Voting
 
   # result_stat_types
-  category_voters_participating:
-    desc: RSVot
-    text: Voters Participating
   category_ballots_cast:
     desc: RSCst
     text: Ballots Cast
-  category_registered_voters:
-    desc: RSReg
-    text: Registered Voters
-  category_eligible_voters:
-    desc: "RSEli: Label for the number of people eligible to register to vote."
-    text: Eligible Voters
-  category_voter_turnout:
-    desc: "RSTrn: Label for the number of people that voted"
-    text: Voter Turnout
   category_ballots_rejected:
     desc: RSRej
     text: Ballots Rejected
   category_ballots_uncounted:
     desc: RSUnc
     text: Ballots Uncounted
-  category_votes_undervotes:
-    desc: RSUnd
-    text: Undervotes
-  category_votes_overvotes:
-    desc: RSOvr
-    text: Overvotes
-  category_votes_writein:
-    desc: "RSWri: Label for the number of write-in votes"
-    text: Write-in Votes
+  category_voter_turnout:
+    desc: "RSTrn: Label for the number of people that voted"
+    text: Voter Turnout
+  category_voters_eligible:
+    desc: "RSEli: Label for the number of people eligible to register to vote."
+    text: Eligible Voters
+  category_voters_participating:
+    desc: RSVot
+    text: Voters Participating
+  category_voters_registered:
+    desc: RSReg
+    text: Registered Voters
   category_votes_choices_total:
     desc: "RSTot: Label for the number of valid votes (i.e. votes for
       candidates, and not including undervotes and overvotes)."
     text: Total Votes
-  category_skipped_votes:
+  category_votes_overvotes:
+    desc: RSOvr
+    text: Overvotes
+  category_votes_rcv_exhausted:
+    desc: "RSExh: Exhausted votes, for use in RCV contests."
+    text: Exhausted Ballots
+  category_votes_skipped:
     desc: RSSki
     text: Skipped Votes
-  category_exhausted_ballots:
-    desc: RSExh
-    text: Exhausted Ballots
+  category_votes_undervotes:
+    desc: RSUnd
+    text: Undervotes
+  category_votes_writein:
+    desc: "RSWri: Label for the number of write-in votes"
+    text: Write-in Votes
 
   consolidated_pres_primary_election:
     desc: For the election title
@@ -164,11 +164,11 @@ phrases:
     desc: Label for the button that expands the question text for a state
       or local measure.
     text: Question text
-  write_in_modifier:
+  write_in_candidate_modifier:
     desc: Phrase that will be in parentheses following a candidate name
       to indicate that the candidate is an official write-in candidate.
     text: write-in
-  write_in_unreviewed_qualifier:
+  write_in_modifier_unreviewed:
     desc: Phrase that will be in parentheses following "Write-in Votes"
       to clarify that these write-in votes haven't been manually reviewed yet.
     text: not yet reviewed
