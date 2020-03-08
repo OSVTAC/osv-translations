@@ -160,6 +160,14 @@ phrases:
       - report_number
     desc: Used for report titles
     text: Preliminary Report {0}
+  value_not_available:
+    desc: Phrase for inclusion as a value (e.g. cell value) to indicate
+      that the value or item isn't available.
+    text: N/A
+  quantity_modifier_estimated:
+    desc: Phrase that will be in parentheses following a label for
+      a numeric total to indicate that the number is an estimate.
+    text: estimated
   question_text_label:
     desc: Label for the button that expands the question text for a state
       or local measure.
