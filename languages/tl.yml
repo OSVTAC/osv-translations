@@ -184,7 +184,7 @@ phrases:
     filipino: Kabuuan ng Rehistrasyon at Nagsidalo
   registration_header:
     _text: Registration
-    filipino: ''
+    filipino: Kabuuan ng Rehistrasyon
   summary_results_header:
     _text: Summary Results
     filipino: Mga Resulta ng Buod
@@ -194,7 +194,7 @@ phrases:
     filipino: Lumipat wika
   turnout_header:
     _text: Voter Turnout
-    filipino: ''
+    filipino: Nagsidalo
   value_not_available:
     _desc: Phrase for inclusion as a value (e.g. cell value) to indicate that the
       value or item isn't available.

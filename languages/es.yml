@@ -184,7 +184,7 @@ phrases:
     spanish: Inscripción y participación total
   registration_header:
     _text: Registration
-    spanish: ''
+    spanish: Inscripción
   summary_results_header:
     _text: Summary Results
     spanish: Resultados resumidos
@@ -194,7 +194,7 @@ phrases:
     spanish: Cambiar de idioma
   turnout_header:
     _text: Voter Turnout
-    spanish: ''
+    spanish: Participación total
   value_not_available:
     _desc: Phrase for inclusion as a value (e.g. cell value) to indicate that the
       value or item isn't available.

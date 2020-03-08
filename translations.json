@@ -326,6 +326,12 @@
             "tl": "Kabuuan ng Rehistrasyon at Nagsidalo",
             "zh": "總登記和投票率"
         },
+        "registration_header": {
+            "en": "Registration",
+            "es": "Inscripción",
+            "tl": "Kabuuan ng Rehistrasyon",
+            "zh": ""
+        },
         "summary_results_header": {
             "en": "Summary Results",
             "es": "Resultados resumidos",
@@ -338,6 +344,12 @@
             "es": "Cambiar de idioma",
             "tl": "Lumipat wika",
             "zh": "切换语言"
+        },
+        "turnout_header": {
+            "en": "Voter Turnout",
+            "es": "Participación total",
+            "tl": "Nagsidalo",
+            "zh": ""
         },
         "value_not_available": {
             "_desc": "Phrase for inclusion as a value (e.g. cell value) to indicate that the value or item isn't available.",
