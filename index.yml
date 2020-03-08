@@ -150,6 +150,8 @@ phrases:
     text: "{0} of {1} Precincts Reporting"
   registration_and_turnout_header:
     text: Registration and Turnout
+  registration_header:
+    text: Registration
   summary_results_header:
     text: Summary Results
   switch_language:
@@ -160,6 +162,8 @@ phrases:
       - report_number
     desc: Used for report titles
     text: Preliminary Report {0}
+  turnout_header:
+    text: Voter Turnout
   value_not_available:
     desc: Phrase for inclusion as a value (e.g. cell value) to indicate
       that the value or item isn't available.
