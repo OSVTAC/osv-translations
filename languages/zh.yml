@@ -1,6 +1,11 @@
 _meta:
   language: Chinese
 phrases:
+  category_ballots_blank:
+    _desc: Label for the number of ballots containing no votes of any kind on a contest.  This
+      also means no overvote.
+    _text: Blank Ballots
+    chinese: ''
   category_ballots_cast:
     _desc: RSCst
     _text: Ballots Cast
@@ -12,6 +17,11 @@ phrases:
   category_ballots_uncounted:
     _desc: RSUnc
     _text: Ballots Uncounted
+    chinese: ''
+  category_ballots_voted:
+    _desc: Label for the number of ballots containing a valid vote for a candidate
+      or choice in a contest (i.e. so not an undervote or overvote).
+    _text: Voted Ballots
     chinese: ''
   category_early_voting:
     _desc: EV
@@ -45,14 +55,18 @@ phrases:
     _desc: TO
     _text: Total
     chinese: 總共
-  category_vote_by_mail:
-    _desc: MV
-    _text: Vote By Mail
-    chinese: 郵寄投票
+  category_turnout_total:
+    _desc: Label for the number of people that voted
+    _text: Total Turnout
+    chinese: ''
   category_turnout_voter:
     _desc: 'RSTrn: Label for the number of people that voted'
     _text: Voter Turnout
     chinese: ''
+  category_vote_by_mail:
+    _desc: MV
+    _text: Vote By Mail
+    chinese: 郵寄投票
   category_voters_eligible:
     _desc: 'RSEli: Label for the number of people eligible to register to vote.'
     _text: Eligible Voters
@@ -138,6 +152,23 @@ phrases:
     _desc: Label for last published date
     _text: Last published
     chinese: 最新更新
+  open_source:
+    _text: open source
+    chinese: ''
+  open_source_software:
+    _text: open source software
+    chinese: ''
+  open_source_voting:
+    _text: open source voting
+    chinese: ''
+  out_of:
+    _desc: General phrase to mean one number "out of" another number (e.g. the "200
+      out of 500" in "200 out of 500 Precincts Reporting").
+    _params:
+    - subtotal
+    - total
+    _text: '{0} of {1}'
+    chinese: ''
   party_AI:
     _text: American Independent
     chinese: 美國獨立黨
@@ -156,6 +187,17 @@ phrases:
   party_REP:
     _text: Republican
     chinese: 共和黨
+  percent_of_eligible_voters:
+    _desc: Label for a percentage relative to the number of people eligible to register
+      to vote (e.g. voter turnout as a percentage of those eligible to register to
+      vote).
+    _text: Percent of Eligible Voters
+    chinese: ''
+  percent_of_registered_voters:
+    _desc: Label for a percentage relative to the number of registered voters (e.g.
+      voter turnout as a percent of registered voters).
+    _text: Percent of Registered Voters
+    chinese: ''
   precincts_reporting_N_of_M:
     _desc: Phrase describing how many precincts have reported (in N of M format)
     _params:
@@ -163,12 +205,6 @@ phrases:
     - total_precinct_count
     _text: '{0} of {1} Precincts Reporting'
     chinese: '登記選民人數: {0} of {1}'
-  report_preliminary_N:
-    _desc: Used for report titles
-    _params:
-    - report_number
-    _text: Preliminary Report {0}
-    chinese: 初步报告{0}
   quantity_modifier_estimated:
     _desc: Phrase that will be in parentheses following a label for a numeric total
       to indicate that the number is an estimate.
@@ -185,6 +221,20 @@ phrases:
   registration_header:
     _text: Registration
     chinese: ''
+  report_demo:
+    _desc: Title for a demonstration results report.
+    _text: Demo Report
+    chinese: ''
+  report_final:
+    _desc: Title for a report of final results (i.e. not preliminary).
+    _text: Final Report
+    chinese: ''
+  report_preliminary_N:
+    _desc: Title for a sequential preliminary report (i.e. so not final).
+    _params:
+    - report_number
+    _text: Preliminary Report {0}
+    chinese: 初步报告{0}
   summary_results_header:
     _text: Summary Results
     chinese: 摘要结果
