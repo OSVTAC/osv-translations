@@ -18,6 +18,13 @@
         }
     },
     "translations": {
+        "category_ballots_blank": {
+            "_desc": "Label for the number of ballots containing no votes of any kind on a contest.  This also means no overvote.",
+            "en": "Blank Ballots",
+            "es": "",
+            "tl": "",
+            "zh": ""
+        },
         "category_ballots_cast": {
             "_desc": "RSCst",
             "en": "Ballots Cast",
@@ -35,6 +42,13 @@
         "category_ballots_uncounted": {
             "_desc": "RSUnc",
             "en": "Ballots Uncounted",
+            "es": "",
+            "tl": "",
+            "zh": ""
+        },
+        "category_ballots_voted": {
+            "_desc": "Label for the number of ballots containing a valid vote for a candidate or choice in a contest (i.e. so not an undervote or overvote).",
+            "en": "Voted Ballots",
             "es": "",
             "tl": "",
             "zh": ""
@@ -95,12 +109,12 @@
             "tl": "Kabuuan",
             "zh": "總共"
         },
-        "category_vote_by_mail": {
-            "_desc": "MV",
-            "en": "Vote By Mail",
-            "es": "Voto por correo",
-            "tl": "Pagboto sa pamamagitan ng Koreo",
-            "zh": "郵寄投票"
+        "category_turnout_total": {
+            "_desc": "Label for the number of people that voted",
+            "en": "Total Turnout",
+            "es": "",
+            "tl": "",
+            "zh": ""
         },
         "category_turnout_voter": {
             "_desc": "RSTrn: Label for the number of people that voted",
@@ -108,6 +122,13 @@
             "es": "",
             "tl": "",
             "zh": ""
+        },
+        "category_vote_by_mail": {
+            "_desc": "MV",
+            "en": "Vote By Mail",
+            "es": "Voto por correo",
+            "tl": "Pagboto sa pamamagitan ng Koreo",
+            "zh": "郵寄投票"
         },
         "category_voters_eligible": {
             "_desc": "RSEli: Label for the number of people eligible to register to vote.",
@@ -249,6 +270,35 @@
             "tl": "Huling Pagsasapanahon",
             "zh": "最新更新"
         },
+        "open_source": {
+            "en": "open source",
+            "es": "código abierto",
+            "tl": "",
+            "zh": ""
+        },
+        "open_source_software": {
+            "en": "open source software",
+            "es": "software de código abierto",
+            "tl": "",
+            "zh": ""
+        },
+        "open_source_voting": {
+            "en": "open source voting",
+            "es": "votación de código abierto",
+            "tl": "",
+            "zh": ""
+        },
+        "out_of": {
+            "_desc": "General phrase to mean one number \"out of\" another number (e.g. the \"200 out of 500\" in \"200 out of 500 Precincts Reporting\").",
+            "_params": [
+                "subtotal",
+                "total"
+            ],
+            "en": "{0} of {1}",
+            "es": "",
+            "tl": "",
+            "zh": ""
+        },
         "party_AI": {
             "en": "American Independent",
             "es": "Independiente Americano",
@@ -285,6 +335,20 @@
             "tl": "Republikano",
             "zh": "共和黨"
         },
+        "percent_of_eligible_voters": {
+            "_desc": "Label for a percentage relative to the number of people eligible to register to vote (e.g. voter turnout as a percentage of those eligible to register to vote).",
+            "en": "Percent of Eligible Voters",
+            "es": "",
+            "tl": "",
+            "zh": ""
+        },
+        "percent_of_registered_voters": {
+            "_desc": "Label for a percentage relative to the number of registered voters (e.g. voter turnout as a percent of registered voters).",
+            "en": "Percent of Registered Voters",
+            "es": "",
+            "tl": "",
+            "zh": ""
+        },
         "precincts_reporting_N_of_M": {
             "_desc": "Phrase describing how many precincts have reported (in N of M format)",
             "_params": [
@@ -295,16 +359,6 @@
             "es": "{0} de {1} Electores inscritos",
             "tl": "{0} sa {1} Rehistradong Botante",
             "zh": "登記選民人數: {0} of {1}"
-        },
-        "report_preliminary_N": {
-            "_desc": "Used for report titles",
-            "_params": [
-                "report_number"
-            ],
-            "en": "Preliminary Report {0}",
-            "es": "Informe preliminar {0}",
-            "tl": "Paunang Ulat {0}",
-            "zh": "初步报告{0}"
         },
         "quantity_modifier_estimated": {
             "_desc": "Phrase that will be in parentheses following a label for a numeric total to indicate that the number is an estimate.",
@@ -331,6 +385,30 @@
             "es": "Inscripción",
             "tl": "Kabuuan ng Rehistrasyon",
             "zh": ""
+        },
+        "report_demo": {
+            "_desc": "Title for a demonstration results report.",
+            "en": "Demo Report",
+            "es": "",
+            "tl": "",
+            "zh": ""
+        },
+        "report_final": {
+            "_desc": "Title for a report of final results (i.e. not preliminary).",
+            "en": "Final Report",
+            "es": "",
+            "tl": "",
+            "zh": ""
+        },
+        "report_preliminary_N": {
+            "_desc": "Title for a sequential preliminary report (i.e. so not final).",
+            "_params": [
+                "report_number"
+            ],
+            "en": "Preliminary Report {0}",
+            "es": "Informe preliminar {0}",
+            "tl": "Paunang Ulat {0}",
+            "zh": "初步报告{0}"
         },
         "summary_results_header": {
             "en": "Summary Results",

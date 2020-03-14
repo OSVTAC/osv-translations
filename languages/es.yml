@@ -154,13 +154,13 @@ phrases:
     spanish: Actualizado por última vez
   open_source:
     _text: open source
-    spanish: ''
+    spanish: código abierto
   open_source_software:
     _text: open source software
-    spanish: ''
+    spanish: software de código abierto
   open_source_voting:
     _text: open source voting
-    spanish: ''
+    spanish: votación de código abierto
   out_of:
     _desc: General phrase to mean one number "out of" another number (e.g. the "200
       out of 500" in "200 out of 500 Precincts Reporting").
