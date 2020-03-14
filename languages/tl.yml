@@ -49,7 +49,7 @@ phrases:
     _desc: MV
     _text: Vote By Mail
     filipino: Pagboto sa pamamagitan ng Koreo
-  category_voter_turnout:
+  category_turnout_voter:
     _desc: 'RSTrn: Label for the number of people that voted'
     _text: Voter Turnout
     filipino: ''
@@ -163,7 +163,7 @@ phrases:
     - total_precinct_count
     _text: '{0} of {1} Precincts Reporting'
     filipino: '{0} sa {1} Rehistradong Botante'
-  preliminary_report_N:
+  report_preliminary_N:
     _desc: Used for report titles
     _params:
     - report_number

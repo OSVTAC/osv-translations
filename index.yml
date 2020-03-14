@@ -46,6 +46,10 @@ phrases:
     text: Provisional Voting
 
   # result_stat_types
+  category_ballots_blank:
+    desc: Label for the number of ballots containing no votes of any kind
+      on a contest.  This also means no overvote.
+    text: Blank Ballots
   category_ballots_cast:
     desc: RSCst
     text: Ballots Cast
@@ -55,7 +59,14 @@ phrases:
   category_ballots_uncounted:
     desc: RSUnc
     text: Ballots Uncounted
-  category_voter_turnout:
+  category_ballots_voted:
+    desc: Label for the number of ballots containing a valid vote for a
+      candidate or choice in a contest (i.e. so not an undervote or overvote).
+    text: Voted Ballots
+  category_turnout_total:
+    desc: "Label for the number of people that voted"
+    text: Total Turnout
+  category_turnout_voter:
     desc: "RSTrn: Label for the number of people that voted"
     text: Voter Turnout
   category_voters_eligible:
@@ -128,6 +139,21 @@ phrases:
     desc: Label for last published date
     text: Last published
 
+  open_source:
+    text: open source
+  open_source_software:
+    text: open source software
+  open_source_voting:
+    text: open source voting
+
+  out_of:
+    desc: General phrase to mean one number "out of" another number (e.g.
+      the "200 out of 500" in "200 out of 500 Precincts Reporting").
+    params:
+      - subtotal
+      - total
+    text: "{0} of {1}"
+
   # Political parties
   party_AI:
     text: American Independent
@@ -142,6 +168,15 @@ phrases:
   party_REP:
     text: Republican
 
+  percent_of_eligible_voters:
+    desc: Label for a percentage relative to the number of people eligible
+      to register to vote (e.g. voter turnout as a percentage of those
+      eligible to register to vote).
+    text: Percent of Eligible Voters
+  percent_of_registered_voters:
+    desc: Label for a percentage relative to the number of registered voters
+      (e.g. voter turnout as a percent of registered voters).
+    text: Percent of Registered Voters
   precincts_reporting_N_of_M:
     desc: Phrase describing how many precincts have reported (in N of M format)
     params:
@@ -157,10 +192,16 @@ phrases:
   switch_language:
     desc: Text preceding the language toggle at the top of each page.
     text: Change language
-  preliminary_report_N:
+  report_demo:
+    desc: Title for a demonstration results report.
+    text: Demo Report
+  report_final:
+    desc: Title for a report of final results (i.e. not preliminary).
+    text: Final Report
+  report_preliminary_N:
     params:
       - report_number
-    desc: Used for report titles
+    desc: Title for a sequential preliminary report (i.e. so not final).
     text: Preliminary Report {0}
   turnout_header:
     text: Voter Turnout

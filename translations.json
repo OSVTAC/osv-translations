@@ -102,7 +102,7 @@
             "tl": "Pagboto sa pamamagitan ng Koreo",
             "zh": "郵寄投票"
         },
-        "category_voter_turnout": {
+        "category_turnout_voter": {
             "_desc": "RSTrn: Label for the number of people that voted",
             "en": "Voter Turnout",
             "es": "",
@@ -296,7 +296,7 @@
             "tl": "{0} sa {1} Rehistradong Botante",
             "zh": "登記選民人數: {0} of {1}"
         },
-        "preliminary_report_N": {
+        "report_preliminary_N": {
             "_desc": "Used for report titles",
             "_params": [
                 "report_number"

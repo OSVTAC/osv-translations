@@ -49,7 +49,7 @@ phrases:
     _desc: MV
     _text: Vote By Mail
     chinese: 郵寄投票
-  category_voter_turnout:
+  category_turnout_voter:
     _desc: 'RSTrn: Label for the number of people that voted'
     _text: Voter Turnout
     chinese: ''
@@ -163,7 +163,7 @@ phrases:
     - total_precinct_count
     _text: '{0} of {1} Precincts Reporting'
     chinese: '登記選民人數: {0} of {1}'
-  preliminary_report_N:
+  report_preliminary_N:
     _desc: Used for report titles
     _params:
     - report_number
