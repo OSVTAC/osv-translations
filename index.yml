@@ -98,6 +98,13 @@ phrases:
     desc: "RSWri: Label for the number of write-in votes"
     text: Write-in Votes
 
+  choice_no:
+    desc: The "No" choice
+    text: "No"
+  choice_yes:
+    desc: The "Yes" choice
+    text: "Yes"
+
   consolidated_pres_primary_election:
     desc: For the election title
     text: Consolidated Presidential Primary Election

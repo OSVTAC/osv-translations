@@ -108,6 +108,14 @@ phrases:
     _desc: 'RSWri: Label for the number of write-in votes'
     _text: Write-in Votes
     spanish: ''
+  choice_no:
+    _desc: The "No" choice
+    _text: 'No'
+    spanish: 'No'
+  choice_yes:
+    _desc: The "Yes" choice
+    _text: 'Yes'
+    spanish: Sí
   consolidated_pres_primary_election:
     _desc: For the election title
     _text: Consolidated Presidential Primary Election

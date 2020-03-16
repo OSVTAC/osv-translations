@@ -200,6 +200,20 @@
             "tl": "",
             "zh": "信件郵票數"
         },
+        "choice_no": {
+            "_desc": "The \"No\" choice",
+            "en": "No",
+            "es": "No",
+            "tl": "Hindi",
+            "zh": "反對"
+        },
+        "choice_yes": {
+            "_desc": "The \"Yes\" choice",
+            "en": "Yes",
+            "es": "Sí",
+            "tl": "Oo",
+            "zh": "贊成"
+        },
         "consolidated_pres_primary_election": {
             "_desc": "For the election title",
             "en": "Consolidated Presidential Primary Election",
