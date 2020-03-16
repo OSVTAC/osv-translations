@@ -116,10 +116,14 @@ phrases:
     desc: Label for the hyperlink to the "Detailed reports and downloads" page
     text: Detailed reports and downloads
 
-  hyperlink_text_california_results:
+  hyperlink_text_ca_state_results:
     desc: Label for the hyperlink to the state results page for the contest
       or the election as a whole.
     text: CA State results
+  hyperlink_text_state_results:
+    desc: Label for the hyperlink to the state results page for the contest
+      or the election as a whole.
+    text: State results
 
   # Languages
   language_chinese:
@@ -185,8 +189,10 @@ phrases:
     text: "{0} of {1} Precincts Reporting"
   registration_and_turnout_header:
     text: Registration and Turnout
-  registration_header:
-    text: Registration
+  voter_registration_header:
+    text: Voter Registration
+  voter_turnout_header:
+    text: Voter Turnout
   summary_results_header:
     text: Summary Results
   switch_language:
@@ -203,8 +209,6 @@ phrases:
       - report_number
     desc: Title for a sequential preliminary report (i.e. so not final).
     text: Preliminary Report {0}
-  turnout_header:
-    text: Voter Turnout
   value_not_available:
     desc: Phrase for inclusion as a value (e.g. cell value) to indicate
       that the value or item isn't available.

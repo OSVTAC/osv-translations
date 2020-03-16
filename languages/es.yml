@@ -127,10 +127,15 @@ phrases:
     _desc: Label for the hyperlink to the detailed results page of a contest
     _text: Detailed results
     spanish: Resultados detallados
-  hyperlink_text_california_results:
+  hyperlink_text_ca_state_results:
     _desc: Label for the hyperlink to the state results page for the contest or the
       election as a whole.
     _text: CA State results
+    spanish: ''
+  hyperlink_text_state_results:
+    _desc: Label for the hyperlink to the state results page for the contest or the
+      election as a whole.
+    _text: State results
     spanish: ''
   language_chinese:
     _desc: The Chinese language (e.g. for the toggle)
@@ -218,9 +223,6 @@ phrases:
   registration_and_turnout_header:
     _text: Registration and Turnout
     spanish: Inscripción y participación total
-  registration_header:
-    _text: Registration
-    spanish: Inscripción
   report_demo:
     _desc: Title for a demonstration results report.
     _text: Demo Report
@@ -242,14 +244,17 @@ phrases:
     _desc: Text preceding the language toggle at the top of each page.
     _text: Change language
     spanish: Cambiar de idioma
-  turnout_header:
-    _text: Voter Turnout
-    spanish: Participación total
   value_not_available:
     _desc: Phrase for inclusion as a value (e.g. cell value) to indicate that the
       value or item isn't available.
     _text: N/A
     spanish: ''
+  voter_registration_header:
+    _text: Voter Registration
+    spanish: Inscripción
+  voter_turnout_header:
+    _text: Voter Turnout
+    spanish: Participación total
   write_in_candidate_modifier:
     _desc: Phrase that will be in parentheses following a candidate name to indicate
       that the candidate is an official write-in candidate.
