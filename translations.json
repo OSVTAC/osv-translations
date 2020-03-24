@@ -30,7 +30,7 @@
             "en": "Ballots Cast",
             "es": "Votos",
             "tl": "Mga Inihulog na Balota",
-            "zh": "投票"
+            "zh": "投票總數"
         },
         "category_ballots_rejected": {
             "_desc": "RSRej",
@@ -51,7 +51,7 @@
             "en": "Voted Ballots",
             "es": "",
             "tl": "",
-            "zh": ""
+            "zh": "有效選票數"
         },
         "category_early_voting": {
             "_desc": "EV",
@@ -135,7 +135,7 @@
             "en": "Eligible Voters",
             "es": "",
             "tl": "",
-            "zh": ""
+            "zh": "有資格投票的選民人數"
         },
         "category_voters_participating": {
             "_desc": "RSVot",
@@ -318,7 +318,7 @@
             "en": "{0} of {1}",
             "es": "",
             "tl": "",
-            "zh": ""
+            "zh": "{1}中的{0}"
         },
         "party_AI": {
             "en": "American Independent",
@@ -361,14 +361,14 @@
             "en": "Percent of Eligible Voters",
             "es": "",
             "tl": "",
-            "zh": ""
+            "zh": "有資格投票的選民投票率"
         },
         "percent_of_registered_voters": {
             "_desc": "Label for a percentage relative to the number of registered voters (e.g. voter turnout as a percent of registered voters).",
             "en": "Percent of Registered Voters",
             "es": "",
             "tl": "",
-            "zh": ""
+            "zh": "登記選民投票率"
         },
         "precincts_reporting_N_of_M": {
             "_desc": "Phrase describing how many precincts have reported (in N of M format)",
@@ -386,7 +386,7 @@
             "en": "estimated",
             "es": "",
             "tl": "",
-            "zh": ""
+            "zh": "估計數"
         },
         "question_text_label": {
             "_desc": "Label for the button that expands the question text for a state or local measure.",

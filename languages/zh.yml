@@ -9,7 +9,7 @@ phrases:
   category_ballots_cast:
     _desc: RSCst
     _text: Ballots Cast
-    chinese: 投票
+    chinese: 投票總數
   category_ballots_rejected:
     _desc: RSRej
     _text: Ballots Rejected
@@ -22,7 +22,7 @@ phrases:
     _desc: Label for the number of ballots containing a valid vote for a candidate
       or choice in a contest (i.e. so not an undervote or overvote).
     _text: Voted Ballots
-    chinese: ''
+    chinese: 有效選票數
   category_early_voting:
     _desc: EV
     _text: Early Voting
@@ -70,7 +70,7 @@ phrases:
   category_voters_eligible:
     _desc: 'RSEli: Label for the number of people eligible to register to vote.'
     _text: Eligible Voters
-    chinese: ''
+    chinese: 有資格投票的選民人數
   category_voters_participating:
     _desc: RSVot
     _text: Voters Participating
@@ -181,7 +181,7 @@ phrases:
     - subtotal
     - total
     _text: '{0} of {1}'
-    chinese: ''
+    chinese: '{1}中的{0}'
   party_AI:
     _text: American Independent
     chinese: 美國獨立黨
@@ -205,12 +205,12 @@ phrases:
       to vote (e.g. voter turnout as a percentage of those eligible to register to
       vote).
     _text: Percent of Eligible Voters
-    chinese: ''
+    chinese: 有資格投票的選民投票率
   percent_of_registered_voters:
     _desc: Label for a percentage relative to the number of registered voters (e.g.
       voter turnout as a percent of registered voters).
     _text: Percent of Registered Voters
-    chinese: ''
+    chinese: 登記選民投票率
   precincts_reporting_N_of_M:
     _desc: Phrase describing how many precincts have reported (in N of M format)
     _params:
@@ -222,7 +222,7 @@ phrases:
     _desc: Phrase that will be in parentheses following a label for a numeric total
       to indicate that the number is an estimate.
     _text: estimated
-    chinese: ''
+    chinese: 估計數
   question_text_label:
     _desc: Label for the button that expands the question text for a state or local
       measure.

@@ -37,6 +37,7 @@ Special thanks to the following individuals for helping with the
 translations:
 
 * Yue Shao
+* Yancy Zhang
 
 
 ## Copyright
