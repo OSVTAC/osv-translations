@@ -31,6 +31,14 @@ python manage.py build_json
 ```
 
 
+## Acknowledgments
+
+Special thanks to the following individuals for helping with the
+translations:
+
+* Yue Shao
+
+
 ## Copyright
 
 Copyright (C) 2020  Chris Jerdonek
