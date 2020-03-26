@@ -305,7 +305,8 @@ def print_lang_todo(languages_data, lang_code):
                 continue
 
             index += 1
-            desc = phrase_data['_desc']
+            # TODO: make "_desc" required?
+            desc = phrase_data.get('_desc')
             english = phrase_data['_text']
             output = dedent(f"""\
             ({index}) {phrase_id}:
