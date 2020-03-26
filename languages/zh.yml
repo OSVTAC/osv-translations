@@ -22,7 +22,7 @@ phrases:
     _desc: Label for the number of ballots containing a valid vote for a candidate
       or choice in a contest (i.e. so not an undervote or overvote).
     _text: Voted Ballots
-    chinese: 有效選票數
+    chinese: 有效選票
   category_early_voting:
     _desc: EV
     _text: Early Voting
