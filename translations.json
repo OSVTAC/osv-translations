@@ -312,13 +312,13 @@
         "out_of": {
             "_desc": "General phrase to mean one number \"out of\" another number (e.g. the \"200 out of 500\" in \"200 out of 500 Precincts Reporting\").",
             "_params": [
-                "subtotal",
+                "part",
                 "total"
             ],
-            "en": "{0} of {1}",
+            "en": "{part} of {total}",
             "es": "",
             "tl": "",
-            "zh": "{1}中的{0}"
+            "zh": "{total}中的{part}"
         },
         "party_AI": {
             "en": "American Independent",
@@ -373,13 +373,13 @@
         "precincts_reporting_N_of_M": {
             "_desc": "Phrase describing how many precincts have reported (in N of M format)",
             "_params": [
-                "reported_precinct_count",
-                "total_precinct_count"
+                "part",
+                "total"
             ],
-            "en": "{0} of {1} Precincts Reporting",
-            "es": "{0} de {1} Electores inscritos",
-            "tl": "{0} sa {1} Rehistradong Botante",
-            "zh": "登記選民人數: {0} of {1}"
+            "en": "{part} of {total} Precincts Reporting",
+            "es": "{part} de {total} Electores inscritos",
+            "tl": "{part} sa {total} Rehistradong Botante",
+            "zh": "登記選民人數: {total}中的{part}"
         },
         "quantity_modifier_estimated": {
             "_desc": "Phrase that will be in parentheses following a label for a numeric total to indicate that the number is an estimate.",
@@ -418,12 +418,12 @@
         "report_preliminary_N": {
             "_desc": "Title for a sequential preliminary report (i.e. so not final).",
             "_params": [
-                "report_number"
+                "number"
             ],
-            "en": "Preliminary Report {0}",
-            "es": "Informe preliminar {0}",
-            "tl": "Paunang Ulat {0}",
-            "zh": "初步报告{0}"
+            "en": "Preliminary Report {number}",
+            "es": "Informe preliminar {number}",
+            "tl": "Paunang Ulat {number}",
+            "zh": "初步报告{number}"
         },
         "summary_results_header": {
             "en": "Summary Results",
@@ -474,9 +474,9 @@
         "yes_vote_threshold": {
             "_desc": "Text saying what fraction or percent threshold of affirmative votes (aka \"yes votes\") are needed for a state or local measure to pass. For example, \"Requires 50%+1 affirmative votes to pass\".",
             "_params": [
-                "percent_threshold"
+                "threshold"
             ],
-            "en": "Requires {0} affirmative votes to pass",
+            "en": "Requires {threshold} affirmative votes to pass",
             "es": "",
             "tl": "",
             "zh": ""
