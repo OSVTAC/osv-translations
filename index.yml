@@ -161,9 +161,9 @@ phrases:
     desc: General phrase to mean one number "out of" another number (e.g.
       the "200 out of 500" in "200 out of 500 Precincts Reporting").
     params:
-      - subtotal
+      - part
       - total
-    text: "{0} of {1}"
+    text: "{part} of {total}"
 
   # Political parties
   party_AI:
@@ -191,9 +191,9 @@ phrases:
   precincts_reporting_N_of_M:
     desc: Phrase describing how many precincts have reported (in N of M format)
     params:
-      - reported_precinct_count
-      - total_precinct_count
-    text: "{0} of {1} Precincts Reporting"
+      - part
+      - total
+    text: "{part} of {total} Precincts Reporting"
   registration_and_turnout_header:
     text: Registration and Turnout
   voter_registration_header:
@@ -213,9 +213,9 @@ phrases:
     text: Final Report
   report_preliminary_N:
     params:
-      - report_number
+      - number
     desc: Title for a sequential preliminary report (i.e. so not final).
-    text: Preliminary Report {0}
+    text: Preliminary Report {number}
   value_not_available:
     desc: Phrase for inclusion as a value (e.g. cell value) to indicate
       that the value or item isn't available.
@@ -241,5 +241,5 @@ phrases:
        votes (aka "yes votes") are needed for a state or local measure to pass.
        For example, "Requires 50%+1 affirmative votes to pass".
     params:
-      - percent_threshold
-    text: Requires {0} affirmative votes to pass
+      - threshold
+    text: Requires {threshold} affirmative votes to pass

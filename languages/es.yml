@@ -178,9 +178,9 @@ phrases:
     _desc: General phrase to mean one number "out of" another number (e.g. the "200
       out of 500" in "200 out of 500 Precincts Reporting").
     _params:
-    - subtotal
+    - part
     - total
-    _text: '{0} of {1}'
+    _text: '{part} of {total}'
     spanish: ''
   party_AI:
     _text: American Independent
@@ -214,10 +214,10 @@ phrases:
   precincts_reporting_N_of_M:
     _desc: Phrase describing how many precincts have reported (in N of M format)
     _params:
-    - reported_precinct_count
-    - total_precinct_count
-    _text: '{0} of {1} Precincts Reporting'
-    spanish: '{0} de {1} Electores inscritos'
+    - part
+    - total
+    _text: '{part} of {total} Precincts Reporting'
+    spanish: '{part} de {total} Electores inscritos'
   quantity_modifier_estimated:
     _desc: Phrase that will be in parentheses following a label for a numeric total
       to indicate that the number is an estimate.
@@ -242,9 +242,9 @@ phrases:
   report_preliminary_N:
     _desc: Title for a sequential preliminary report (i.e. so not final).
     _params:
-    - report_number
-    _text: Preliminary Report {0}
-    spanish: Informe preliminar {0}
+    - number
+    _text: Preliminary Report {number}
+    spanish: Informe preliminar {number}
   summary_results_header:
     _text: Summary Results
     spanish: Resultados resumidos
@@ -278,6 +278,6 @@ phrases:
       "yes votes") are needed for a state or local measure to pass. For example, "Requires
       50%+1 affirmative votes to pass".
     _params:
-    - percent_threshold
-    _text: Requires {0} affirmative votes to pass
+    - threshold
+    _text: Requires {threshold} affirmative votes to pass
     spanish: ''
