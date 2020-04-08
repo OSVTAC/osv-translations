@@ -295,19 +295,25 @@
             "en": "open source",
             "es": "código abierto",
             "tl": "",
-            "zh": ""
+            "zh": "開源的"
         },
         "open_source_software": {
             "en": "open source software",
             "es": "software de código abierto",
             "tl": "",
-            "zh": ""
+            "zh": "開源軟件"
         },
         "open_source_voting": {
             "en": "open source voting",
             "es": "votación de código abierto",
             "tl": "",
-            "zh": ""
+            "zh": "开源投票"
+        },
+        "open_source_voting_system": {
+            "en": "open source voting system",
+            "es": "",
+            "tl": "",
+            "zh": "开源投票系统"
         },
         "out_of": {
             "_desc": "General phrase to mean one number \"out of\" another number (e.g. the \"200 out of 500\" in \"200 out of 500 Precincts Reporting\").",

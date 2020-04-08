@@ -167,13 +167,16 @@ phrases:
     chinese: 最新更新
   open_source:
     _text: open source
-    chinese: ''
+    chinese: 開源的
   open_source_software:
     _text: open source software
-    chinese: ''
+    chinese: 開源軟件
   open_source_voting:
     _text: open source voting
-    chinese: ''
+    chinese: 开源投票
+  open_source_voting_system:
+    _text: open source voting system
+    chinese: 开源投票系统
   out_of:
     _desc: General phrase to mean one number "out of" another number (e.g. the "200
       out of 500" in "200 out of 500 Precincts Reporting").

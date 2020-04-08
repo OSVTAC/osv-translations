@@ -156,6 +156,8 @@ phrases:
     text: open source software
   open_source_voting:
     text: open source voting
+  open_source_voting_system:
+    text: open source voting system
 
   out_of:
     desc: General phrase to mean one number "out of" another number (e.g.
