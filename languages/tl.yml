@@ -56,7 +56,7 @@ phrases:
     _text: Total
     filipino: Kabuuan
   category_turnout_total:
-    _desc: Label for the number of people that voted
+    _desc: Label for the total number of people that voted
     _text: Total Turnout
     filipino: ''
   category_turnout_voter:

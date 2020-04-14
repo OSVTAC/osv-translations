@@ -110,18 +110,18 @@
             "zh": "總共"
         },
         "category_turnout_total": {
-            "_desc": "Label for the number of people that voted",
+            "_desc": "Label for the total number of people that voted",
             "en": "Total Turnout",
             "es": "",
             "tl": "",
-            "zh": ""
+            "zh": "投票人數"
         },
         "category_turnout_voter": {
             "_desc": "RSTrn: Label for the number of people that voted",
             "en": "Voter Turnout",
-            "es": "",
-            "tl": "",
-            "zh": ""
+            "es": "Participación total",
+            "tl": "Nagsidalo",
+            "zh": "選民投票率"
         },
         "category_vote_by_mail": {
             "_desc": "MV",

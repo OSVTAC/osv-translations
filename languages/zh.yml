@@ -56,7 +56,7 @@ phrases:
     _text: Total
     chinese: 總共
   category_turnout_total:
-    _desc: Label for the number of people that voted
+    _desc: Label for the total number of people that voted
     _text: Total Turnout
     chinese: 投票人數
   category_turnout_voter:
