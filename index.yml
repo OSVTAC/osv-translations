@@ -64,7 +64,7 @@ phrases:
       candidate or choice in a contest (i.e. so not an undervote or overvote).
     text: Voted Ballots
   category_turnout_total:
-    desc: "Label for the number of people that voted"
+    desc: "Label for the total number of people that voted"
     text: Total Turnout
   category_turnout_voter:
     desc: "RSTrn: Label for the number of people that voted"
@@ -200,8 +200,6 @@ phrases:
     text: Registration and Turnout
   voter_registration_header:
     text: Voter Registration
-  voter_turnout_header:
-    text: Voter Turnout
   summary_results_header:
     text: Summary Results
   switch_language:

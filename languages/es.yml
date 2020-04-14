@@ -62,7 +62,7 @@ phrases:
   category_turnout_voter:
     _desc: 'RSTrn: Label for the number of people that voted'
     _text: Voter Turnout
-    spanish: ''
+    spanish: Participación total
   category_vote_by_mail:
     _desc: MV
     _text: Vote By Mail
@@ -263,9 +263,6 @@ phrases:
   voter_registration_header:
     _text: Voter Registration
     spanish: Inscripción
-  voter_turnout_header:
-    _text: Voter Turnout
-    spanish: Participación total
   write_in_candidate_modifier:
     _desc: Phrase that will be in parentheses following a candidate name to indicate
       that the candidate is an official write-in candidate.
